@@ -32,9 +32,12 @@ A condition is declared **transparent** if pooled detection accuracy is not sign
 - Estimated cost: 36 × £2.70 ≈ £97 + Prolific fee (~33%) ≈ **£130 total**.
 - Consent text is on the study's first screen (voluntary, anonymous, answers/timings/device only, stop anytime).
 
-## 6. Hosting (5 minutes)
+## 6. Hosting
 
-The study is a static site: `study/index.html` + `study/audio/*.wav` (10 MB). Host anywhere static:
+**Live instance (GitHub Pages, `gh-pages` branch of this repo):** https://deployment-inc.github.io/perceptual-compute-allocation/
+Share that link directly (append `?pid=NAME` to tag a known listener, or `?PROLIFIC_PID={{%PROLIFIC_PID%}}` on Prolific). To republish after editing `study/`, push the folder's contents to the `gh-pages` branch again.
+
+The study is a static site: `study/index.html` + `study/audio/*.wav` (10 MB), so it can also be hosted anywhere static:
 - **Netlify Drop:** drag the `study/` folder onto app.netlify.com/drop → get a URL.
 - **Vercel:** `vercel deploy study/` (or connect the repo).
 - **S3 + static website hosting** or GitHub Pages also work.
