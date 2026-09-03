@@ -1,0 +1,45 @@
+...0/90
+...10/90
+...20/90
+...30/90
+...40/90
+...50/90
+...60/90
+...70/90
+...80/90
+
+model    budget     policy   PESQ   STOI     bins
+kokoro      0.1     energy  2.735  0.999    13469
+kokoro      0.1 perceptual  2.222  0.998     8120
+kokoro      0.1     random  2.245  0.987    11855
+kokoro      0.3     energy  1.731  0.973    37044
+kokoro      0.3 perceptual  1.852  0.983    29592
+kokoro      0.3     random  1.876  0.973    35394
+kokoro      0.5     energy  1.599  0.948    60498
+kokoro      0.5 perceptual  1.702  0.964    49941
+kokoro      0.5     random  1.745  0.966    59169
+kokoro      0.7     energy  1.568  0.955    89382
+kokoro      0.7 perceptual  1.657  0.957    75195
+kokoro      0.7     random  1.666  0.962    82602
+piper       0.1     energy  3.297  1.000    24424
+piper       0.1 perceptual  2.606  0.999    13426
+piper       0.1     random  2.266  0.988    10471
+piper       0.3     energy  1.669  0.986    54612
+piper       0.3 perceptual  1.925  0.985    37243
+piper       0.3     random  1.845  0.974    31614
+piper       0.5     energy  1.543  0.949    73521
+piper       0.5 perceptual  1.792  0.967    54620
+piper       0.5     random  1.714  0.967    52658
+piper       0.7     energy  1.541  0.954    89015
+piper       0.7 perceptual  1.673  0.960    73472
+piper       0.7     random  1.625  0.963    73835
+
+Paired Wilcoxon (perceptual vs energy PESQ), per model x budget:
+  piper B=0.1: mean diff -0.691, p=2.11e-11, n=45
+  piper B=0.3: mean diff +0.256, p=1.58e-06, n=45
+  piper B=0.5: mean diff +0.250, p=9.97e-09, n=45
+  piper B=0.7: mean diff +0.132, p=1.07e-04, n=45
+  kokoro B=0.1: mean diff -0.514, p=5.16e-09, n=45
+  kokoro B=0.3: mean diff +0.121, p=9.43e-04, n=45
+  kokoro B=0.5: mean diff +0.102, p=3.51e-04, n=45
+  kokoro B=0.7: mean diff +0.089, p=3.34e-04, n=45

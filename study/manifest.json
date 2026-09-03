@@ -1,0 +1,67 @@
+{
+ "budgets": [
+  0.3,
+  0.5,
+  0.6,
+  0.75,
+  0.9
+ ],
+ "items": [
+  {
+   "tag": "piper_agent0",
+   "model": "piper",
+   "domain": "agent",
+   "text": "Sure \u2014 your order 4 8 2 ships Tuesday.",
+   "dur_s": 2.95
+  },
+  {
+   "tag": "piper_agent8",
+   "model": "piper",
+   "domain": "agent",
+   "text": "Is there anything else I can help you with today?",
+   "dur_s": 2.52
+  },
+  {
+   "tag": "piper_hinglish1",
+   "model": "piper",
+   "domain": "hinglish",
+   "text": "Haan ji, main aapki kya help kar sakta hoon?",
+   "dur_s": 3.44
+  },
+  {
+   "tag": "piper_narration12",
+   "model": "piper",
+   "domain": "narration",
+   "text": "Snow began to fall just after midnight, softly and without wind, so that by dawn every branch carried a thin white line.",
+   "dur_s": 6.77
+  },
+  {
+   "tag": "kokoro_agent1",
+   "model": "kokoro",
+   "domain": "agent",
+   "text": "Thanks for calling. How can I help you today?",
+   "dur_s": 2.43
+  },
+  {
+   "tag": "kokoro_agent13",
+   "model": "kokoro",
+   "domain": "agent",
+   "text": "Sorry, I did not catch that. Could you repeat it?",
+   "dur_s": 2.77
+  },
+  {
+   "tag": "kokoro_hinglish9",
+   "model": "kokoro",
+   "domain": "hinglish",
+   "text": "Kya main aapki aur koi help kar sakta hoon?",
+   "dur_s": 2.65
+  },
+  {
+   "tag": "kokoro_narration5",
+   "model": "kokoro",
+   "domain": "narration",
+   "text": "The old clock in the hallway struck nine, and the house settled into the particular silence that comes only after everyone has gone to bed.",
+   "dur_s": 7.85
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listening Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f4f4f2;
+  --card: #ffffff;
+  --ink: #16181c;
+  --muted: #5c6370;
+  --faint: #8b919b;
+  --line: #dadcd8;
+  --accent: #1b3f5c;
+  --accent-ink: #ffffff;
+  --accent-wash: #e6ecf1;
+  --good: #2e6b4a;
+  --good-wash: #e6f0ea;
+  --warn: #a63d2f;
+  --warn-wash: #f5e8e5;
+  --radius: 4px;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { background: var(--paper); }
+body {
+  margin: 0; color: var(--ink); background: var(--paper);
+  font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent); width: 0; transition: width .3s ease; }
+.wrap { max-width: 34rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+h1 {
+  font-family: "Newsreader", Georgia, serif; font-style: italic; font-weight: 500;
+  font-size: 2.1rem; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 1.1rem;
+  text-wrap: balance;
+}
+p { margin: 0 0 1rem; color: var(--muted); }
+p strong { color: var(--ink); font-weight: 600; }
+.kicker { font-size: .74rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin: 0 0 .9rem; }
+.rule { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0; }
+.field { margin: 1.3rem 0 0; }
+.field .label { font-size: .86rem; font-weight: 600; color: var(--ink); margin-bottom: .5rem; }
+.seg { display: flex; flex-wrap: wrap; gap: .45rem; }
+.seg button {
+  font: inherit; font-size: .9rem; cursor: pointer;
+  background: var(--card); color: var(--muted);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: .5rem .9rem; transition: border-color .12s, color .12s, background .12s;
+}
+.seg button:hover { border-color: var(--faint); color: var(--ink); }
+.seg button.sel { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.btn {
+  font: inherit; font-weight: 600; font-size: .95rem; cursor: pointer;
+  background: var(--accent); color: var(--accent-ink);
+  border: 1px solid var(--accent); border-radius: var(--radius);
+  padding: .75rem 1.3rem; margin-top: 1.6rem;
+}
+.btn:disabled { opacity: .35; cursor: default; }
+.btn.quiet { background: transparent; color: var(--accent); }
+.status { display: flex; justify-content: space-between; align-items: baseline; font-size: .8rem; color: var(--faint); margin-bottom: 1.6rem; }
+.status .n { font-variant-numeric: tabular-nums; }
+.prompt { font-size: 1.05rem; color: var(--ink); margin-bottom: 1.4rem; }
+.abx { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .7rem; }
+.tile {
+  font: inherit; cursor: pointer; position: relative;
+  aspect-ratio: 1 / .78; border-radius: var(--radius);
+  background: var(--card); color: var(--ink);
+  border: 1px solid var(--line);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem;
+  transition: border-color .12s, background .12s, color .12s;
+}
+.tile .letter { font-family: "Newsreader", Georgia, serif; font-style: italic; font-size: 2.4rem; line-height: 1; }
+.tile .sub { font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+.tile:hover { border-color: var(--faint); }
+.tile.heard { border-color: var(--ink); }
+.tile.playing { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.tile.playing .sub { color: var(--paper); opacity: .7; }
+.tile.x { background: var(--accent-wash); border-color: var(--accent); color: var(--accent); }
+.tile.x.playing { background: var(--accent); color: var(--accent-ink); }
+.tile.x .sub { color: inherit; opacity: .75; }
+.answer { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin-top: 1rem; }
+.answer button {
+  font: inherit; font-weight: 600; font-size: .95rem; cursor: pointer;
+  background: var(--card); color: var(--ink);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: .85rem;
+  transition: border-color .12s, opacity .12s;
+}
+.answer button:hover:not(:disabled) { border-color: var(--ink); }
+.answer button:disabled { opacity: .3; cursor: default; }
+.answer .key { display: inline-block; margin-left: .5rem; font-size: .72rem; color: var(--faint); font-family: "IBM Plex Mono", monospace; }
+.feedback { min-height: 1.5rem; margin-top: 1rem; font-size: .92rem; font-weight: 500; }
+.feedback.ok { color: var(--good); } .feedback.bad { color: var(--warn); }
+.hint { font-size: .82rem; color: var(--faint); margin-top: 1.6rem; }
+.hint kbd { font-family: "IBM Plex Mono", monospace; font-size: .78rem; border: 1px solid var(--line); border-radius: 3px; padding: 0 .3rem; background: var(--card); }
+.done { border-left: 2px solid var(--good); padding: .2rem 0 .2rem 1rem; margin: 1.4rem 0; }
+.done .label { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--good); font-weight: 600; }
+.code { font-family: "IBM Plex Mono", monospace; font-size: 1.5rem; font-weight: 500; letter-spacing: .06em; margin: .3rem 0 0; color: var(--ink); }
+textarea {
+  width: 100%; min-height: 6rem; margin-top: .6rem;
+  font-family: "IBM Plex Mono", monospace; font-size: .78rem; line-height: 1.4;
+  color: var(--muted); background: var(--card);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: .6rem; resize: vertical;
+}
+@media (max-width: 480px) {
+  .wrap { padding-top: 2.5rem; }
+  h1 { font-size: 1.8rem; }
+  .tile .letter { font-size: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) { .progress, .tile, .seg button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="progress" id="bar"></div>
+<div class="wrap" id="app"></div>
+<script>
+// ======================= CONFIG (edit these) =======================
+const CONFIG = {
+  SUBMIT_URL: "",                      // optional POST endpoint for results JSON (see PROTOCOL.md)
+  COMPLETION_CODE: "SOTTO-ABX-2026",   // shown at the end
+  N_TEST_TRIALS_PER_COND: 6,           // 5 conditions x 6 = 30 test rounds
+  N_ANCHOR_TRIALS: 6,
+  N_PRACTICE: 2,
+  AUDIO_BASE: "audio/",
+};
+const BUDGETS = ["e30","e50","e60","e75","e90"];
+const ITEMS = ["piper_agent0","piper_agent8","piper_hinglish1","piper_narration12",
+               "kokoro_agent1","kokoro_agent13","kokoro_hinglish9","kokoro_narration5"];
+// ===================================================================
+
+const app = document.getElementById('app');
+const bar = document.getElementById('bar');
+const params = new URLSearchParams(location.search);
+const pid = params.get('PROLIFIC_PID') || params.get('pid') || ('anon-' + Math.random().toString(36).slice(2,10));
+const rng = mulberry32(hashStr(pid + Date.now()));
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function hashStr(s){let h=1779033703;for(let i=0;i<s.length;i++){h=Math.imul(h^s.charCodeAt(i),3432918353);h=h<<13|h>>>19}return h>>>0}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+
+function buildTrials(){
+  const test = [];
+  for (const cond of BUDGETS){
+    const utts = shuffle(ITEMS.slice()).slice(0, CONFIG.N_TEST_TRIALS_PER_COND);
+    for (const u of utts) test.push({utt:u, cond, kind:'test'});
+  }
+  const anchors = shuffle(ITEMS.slice()).slice(0, CONFIG.N_ANCHOR_TRIALS).map(u=>({utt:u, cond:'anchor', kind:'anchor'}));
+  const practice = shuffle(ITEMS.slice()).slice(0, CONFIG.N_PRACTICE).map(u=>({utt:u, cond:'anchor', kind:'practice'}));
+  const main = shuffle(test.concat(anchors));
+  return practice.concat(main).map(t => ({...t, xIsRef: rng()<0.5, aIsRef: rng()<0.5}));
+}
+const state = { device:null, environment:null, trials:buildTrials(), i:0, results:[], started:Date.now(), trialStart:0, plays:{A:0,B:0,X:0} };
+
+let current=null, currentBtn=null;
+function stop(){ if(current){current.pause();current=null;} if(currentBtn){currentBtn.classList.remove('playing');currentBtn=null;} }
+function play(file, btn, key){
+  if(currentBtn===btn){stop();return;}
+  stop();
+  current = new Audio(CONFIG.AUDIO_BASE + file);
+  currentBtn = btn; btn.classList.add('playing'); btn.classList.add('heard');
+  state.plays[key]++;
+  current.onended = stop;
+  current.play().catch(()=>{});
+  checkReady();
+}
+function checkReady(){
+  const ok = state.plays.A>0 && state.plays.B>0 && state.plays.X>0;
+  document.querySelectorAll('.answer button').forEach(b=>b.disabled=!ok);
+}
+function setProgress(){ bar.style.width = (100 * state.i / state.trials.length) + '%'; }
+
+function intro(){
+  setProgress();
+  app.innerHTML = `
+  <p class="kicker">Listening study</p>
+  <h1>Which clip is the copy?</h1>
+  <p>You will hear short synthetic speech clips in rounds of three: <strong>A</strong>, <strong>B</strong>, and <strong>X</strong>. X is an exact copy of either A or B. Listen to all three and tell us which one X matches.</p>
+  <p>Many rounds are hard — often A and B sound identical. That is expected; just give your best guess. There are ${state.trials.length} rounds, about ten to fifteen minutes.</p>
+  <p><strong>Please use headphones</strong> in a quiet place at a comfortable volume, and keep the volume fixed for the whole study.</p>
+  <hr class="rule">
+  <p>Participation is voluntary and anonymous. We record only your answers, timings, and device type; you may stop at any time by closing the page. Continuing means you consent to take part.</p>
+  <div class="field"><div class="label">What are you listening on?</div>
+    <div class="seg" id="dev"><button data-v="headphones">Headphones or earbuds</button><button data-v="laptop">Laptop speakers</button><button data-v="phone">Phone speaker</button><button data-v="external">External speakers</button></div></div>
+  <div class="field"><div class="label">How quiet is it around you?</div>
+    <div class="seg" id="env"><button data-v="quiet">Quiet</button><button data-v="some">Some noise</button><button data-v="noisy">Noisy</button></div></div>
+  <button class="btn" id="go" disabled>Begin with two practice rounds</button>`;
+  for (const [id, key] of [['dev','device'],['env','environment']]) document.querySelectorAll('#'+id+' button').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('#'+id+' button').forEach(x=>x.classList.remove('sel')); b.classList.add('sel');
+    state[key] = b.dataset.v;
+    document.getElementById('go').disabled = !(state.device && state.environment);
+  });
+  document.getElementById('go').onclick = ()=>trial();
+}
+
+function trial(){
+  stop(); setProgress();
+  if (state.i >= state.trials.length) return finish();
+  const t = state.trials[state.i];
+  const refFile = t.utt + '_ref.wav', procFile = t.utt + '_' + t.cond + '.wav';
+  const A = t.aIsRef ? refFile : procFile, B = t.aIsRef ? procFile : refFile, X = t.xIsRef ? refFile : procFile;
+  state.plays = {A:0,B:0,X:0}; state.trialStart = Date.now();
+  const nP = CONFIG.N_PRACTICE;
+  const label = t.kind==='practice' ? `Practice ${state.i+1} of ${nP}` : `Round ${state.i-nP+1} of ${state.trials.length-nP}`;
+  app.innerHTML = `
+  <div class="status"><span>${t.kind==='practice' ? 'Practice — you will be told the answer' : 'Study'}</span><span class="n">${label}</span></div>
+  <p class="prompt">Play all three, as often as you like. Then: is <strong>X</strong> a copy of A, or of B?</p>
+  <div class="abx">
+    <button class="tile" id="pA"><span class="letter">A</span><span class="sub">play</span></button>
+    <button class="tile" id="pB"><span class="letter">B</span><span class="sub">play</span></button>
+    <button class="tile x" id="pX"><span class="letter">X</span><span class="sub">the copy</span></button>
+  </div>
+  <div class="answer">
+    <button id="xa" disabled>X is a copy of A<span class="key">1</span></button>
+    <button id="xb" disabled>X is a copy of B<span class="key">2</span></button>
+  </div>
+  <div class="feedback" id="fb"></div>
+  <p class="hint">Keyboard: <kbd>A</kbd> <kbd>B</kbd> <kbd>X</kbd> to play, <kbd>1</kbd> or <kbd>2</kbd> to answer.</p>`;
+  const bA = document.getElementById('pA'), bB = document.getElementById('pB'), bX = document.getElementById('pX');
+  bA.onclick = ()=>play(A, bA, 'A'); bB.onclick = ()=>play(B, bB, 'B'); bX.onclick = ()=>play(X, bX, 'X');
+  let answered = false;
+  const answer = (choice)=>{
+    if (answered) return; answered = true;
+    stop();
+    const xIsA = (t.xIsRef === t.aIsRef);
+    const correct = (choice==='A') === xIsA;
+    state.results.push({utt:t.utt, cond:t.cond, kind:t.kind, xIsRef:t.xIsRef, aIsRef:t.aIsRef,
+      choice, correct, rt_ms: Date.now()-state.trialStart, plays:{...state.plays}});
+    document.querySelectorAll('.answer button').forEach(b=>b.disabled=true);
+    if (t.kind==='practice'){
+      const fb = document.getElementById('fb');
+      fb.textContent = correct ? 'Correct — X matched ' + (xIsA?'A':'B') + '.' : 'Not quite — X matched ' + (xIsA?'A':'B') + '. Listen for the clip that sounds slightly rougher or duller.';
+      fb.className = 'feedback ' + (correct?'ok':'bad');
+      setTimeout(()=>{state.i++; trial();}, 1900);
+    } else { state.i++; trial(); }
+  };
+  document.getElementById('xa').onclick = ()=>answer('A');
+  document.getElementById('xb').onclick = ()=>answer('B');
+  window.onkeydown = (e)=>{
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const k = e.key.toLowerCase();
+    if (k==='a') bA.click(); else if (k==='b') bB.click(); else if (k==='x') bX.click();
+    else if (k==='1' && !document.getElementById('xa').disabled) answer('A');
+    else if (k==='2' && !document.getElementById('xb').disabled) answer('B');
+  };
+  for (const f of [A,B,X]) { const a = new Audio(CONFIG.AUDIO_BASE + f); a.preload='auto'; }
+}
+
+async function finish(){
+  window.onkeydown = null; bar.style.width = '100%';
+  const anchors = state.results.filter(r=>r.kind==='anchor');
+  const payload = {
+    study:'sotto-abx-v1', pid, submittedAt:new Date().toISOString(), durationMs: Date.now()-state.started,
+    device: state.device, environment: state.environment, userAgent: navigator.userAgent,
+    anchorAccuracy: anchors.length ? anchors.filter(r=>r.correct).length/anchors.length : null,
+    trials: state.results,
+  };
+  try { localStorage.setItem('sotto-abx-'+pid, JSON.stringify(payload)); } catch(e){}
+  let posted = false;
+  if (CONFIG.SUBMIT_URL){
+    try { await fetch(CONFIG.SUBMIT_URL, {method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain'}, body: JSON.stringify(payload)}); posted = true; } catch(e){}
+  }
+  const code = btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
+  app.innerHTML = `
+  <p class="kicker">Listening study</p>
+  <h1>Thank you.</h1>
+  <div class="done"><div class="label">${posted ? 'Responses submitted' : 'Completion code'}</div><div class="code">${esc(CONFIG.COMPLETION_CODE)}</div></div>
+  <p>${posted ? 'Your answers were submitted automatically. If you were asked for a results code as a backup, it is below.' : 'Please copy the results code below and send it to the person who invited you.'}</p>
+  <textarea id="code" readonly>${code}</textarea>
+  <button class="btn quiet" id="copy">Copy results code</button>`;
+  document.getElementById('copy').onclick = ()=>{ const ta=document.getElementById('code'); ta.select(); document.execCommand('copy'); document.getElementById('copy').textContent='Copied'; };
+}
+
+intro();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+ "host": {
+  "platform": "Linux-7.0.0-1011-aws-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu": "Model name:                              Intel(R) Xeon(R) Platinum 8488C",
+  "ncpu": "8",
+  "ort": "1.29.0"
+ },
+ "piper_rtf_mean": 0.022940793943625637,
+ "piper_scopes": {
+  "/dec": 0.5055900000000005,
+  "/enc_p": 0.10202300000000412,
+  "/flow": 0.10014000000000013,
+  "/dp": 0.06449199999999637,
+  "(root)": 0.01742999999999999,
+  "/RandomNormalLike": 0.004186,
+  "/MatMul_1": 0.000495,
+  "/MatMul": 0.00046399999999999995
+ },
+ "piper_kernel_total_s": 0.798696000000032,
+ "kokoro_rtf_mean": 0.19362715964878677,
+ "kokoro_scopes": {
+  "/decoder": 2.951820000000005,
+  "/encoder": 0.1868230000000011,
+  "(root)": 0.004051999999999999,
+  "/Gather": 0.000109
+ },
+ "kokoro_kernel_total_s": 3.142803999999997,
+ "decoder_fp32_s_5utt": 4.781741767000312,
+ "decoder_int8_s_5utt": 38.558045410999966,
+ "int8_speedup": 0.12401411212706756
+}

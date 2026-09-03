@@ -1,0 +1,5042 @@
+[
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.579436302185059,
+  "stoi": 0.999993992989112,
+  "delta_db": -48.909494351012164
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.637663841247559,
+  "stoi": 0.9999953929232551
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.913270950317383,
+  "stoi": 0.9999409043080939
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.522752285003662,
+  "stoi": 0.9999808891885018,
+  "delta_db": -43.909494351012164
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.626594066619873,
+  "stoi": 0.9999854489438962
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.553614854812622,
+  "stoi": 0.9998298034388545
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.426534652709961,
+  "stoi": 0.9999394317182186,
+  "delta_db": -38.909494351012164
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.602508544921875,
+  "stoi": 0.9999540150452022
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1118111610412598,
+  "stoi": 0.9994498291090408
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.279127597808838,
+  "stoi": 0.9998145012285208,
+  "delta_db": -33.909494351012164
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.56588888168335,
+  "stoi": 0.9998546885641941
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.6616575717926025,
+  "stoi": 0.9980319269250074
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.313063383102417,
+  "stoi": 0.9994345771220502,
+  "delta_db": -28.909494351012164
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.493446350097656,
+  "stoi": 0.9995416818765502
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2881128787994385,
+  "stoi": 0.9935938962779776
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 2.7472848892211914,
+  "stoi": 0.998255248769886,
+  "delta_db": -23.909494351012164
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.354331970214844,
+  "stoi": 0.9985602640587838
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.978421926498413,
+  "stoi": 0.9823784871807456
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.599457740783691,
+  "stoi": 0.9999967143918992,
+  "delta_db": -48.56783995900049
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.616081237792969,
+  "stoi": 0.9999955847403665
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.99050235748291,
+  "stoi": 0.9999883104008845
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.5493879318237305,
+  "stoi": 0.9999896959274408,
+  "delta_db": -43.56783995900049
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.592391490936279,
+  "stoi": 0.9999860296637252
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.5639891624450684,
+  "stoi": 0.9999596192987976
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.417021751403809,
+  "stoi": 0.9999677216491094,
+  "delta_db": -38.56783995900049
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.566883563995361,
+  "stoi": 0.9999557746085385
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.137073040008545,
+  "stoi": 0.9998611823287902
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.184391498565674,
+  "stoi": 0.9998978283267288,
+  "delta_db": -33.56783995900049
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.518263816833496,
+  "stoi": 0.9998599026848184
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.675015687942505,
+  "stoi": 0.9995702458433035
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.0221052169799805,
+  "stoi": 0.9996675510905773,
+  "delta_db": -28.567839959000487
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.4091033935546875,
+  "stoi": 0.9995560113811242
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2333285808563232,
+  "stoi": 0.9987505063888684
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.84316349029541,
+  "stoi": 0.9988857715492054,
+  "delta_db": -23.567839959000487
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.181814670562744,
+  "stoi": 0.9985929907183022
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.8990614414215088,
+  "stoi": 0.9962637254806734
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.6358256340026855,
+  "stoi": 0.9999974882369702,
+  "delta_db": -49.4776827263588
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.642003059387207,
+  "stoi": 0.9999955420670671
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.238051891326904,
+  "stoi": 0.9999787531501078
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.623809814453125,
+  "stoi": 0.9999920778177596,
+  "delta_db": -44.4776827263588
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.6380228996276855,
+  "stoi": 0.9999859029080906
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 4.020357608795166,
+  "stoi": 0.9999305367447767
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.587076663970947,
+  "stoi": 0.9999750270652837,
+  "delta_db": -39.4776827263588
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.626724720001221,
+  "stoi": 0.9999554295794469
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.564979076385498,
+  "stoi": 0.9997717002036655
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.499892711639404,
+  "stoi": 0.9999210686473504,
+  "delta_db": -34.4776827263588
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.594081878662109,
+  "stoi": 0.9998592025300193
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0124051570892334,
+  "stoi": 0.9992362001686117
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.323606014251709,
+  "stoi": 0.9997485580568121,
+  "delta_db": -29.4776827263588
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.498059272766113,
+  "stoi": 0.9995562299576164
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.4918739795684814,
+  "stoi": 0.9974578115481026
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.103202819824219,
+  "stoi": 0.9991895147981175,
+  "delta_db": -24.4776827263588
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.291759014129639,
+  "stoi": 0.998605988417581
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.1264889240264893,
+  "stoi": 0.991706597727017
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.585353374481201,
+  "stoi": 0.9999951481918797,
+  "delta_db": -48.39256877144632
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.640875816345215,
+  "stoi": 0.9999953109830368
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.983987331390381,
+  "stoi": 0.9999904475888501
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.498475551605225,
+  "stoi": 0.9999845286475296,
+  "delta_db": -43.39256877144632
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.633513450622559,
+  "stoi": 0.9999851526404381
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.6585888862609863,
+  "stoi": 0.9999677484734322
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.341053485870361,
+  "stoi": 0.9999500188344792,
+  "delta_db": -38.39256877144632
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.609585285186768,
+  "stoi": 0.9999529414156426
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.2183568477630615,
+  "stoi": 0.9998915602286963
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.1465253829956055,
+  "stoi": 0.9998344849541759,
+  "delta_db": -33.39256877144633
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.568432331085205,
+  "stoi": 0.999850616731271
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.772937536239624,
+  "stoi": 0.9996459378011627
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.983316421508789,
+  "stoi": 0.9994460289914091,
+  "delta_db": -28.392568771446328
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.470008373260498,
+  "stoi": 0.9995246348829496
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.3700385093688965,
+  "stoi": 0.9988760487176475
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.813760280609131,
+  "stoi": 0.9982926806425756,
+  "delta_db": -23.39256877144632
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.240987300872803,
+  "stoi": 0.9984838097767026
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.1122066974639893,
+  "stoi": 0.9962835221173593
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.607037544250488,
+  "stoi": 0.9999969917212079,
+  "delta_db": -48.611192257872716
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.640472412109375,
+  "stoi": 0.9999955740580374
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8581502437591553,
+  "stoi": 0.9999789120083672
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.549426555633545,
+  "stoi": 0.9999904662862577,
+  "delta_db": -43.611192257872716
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.632122039794922,
+  "stoi": 0.9999859979954373
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.4871225357055664,
+  "stoi": 0.9999309264983824
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.385074615478516,
+  "stoi": 0.9999697076748039,
+  "delta_db": -38.611192257872716
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.597529411315918,
+  "stoi": 0.999955688464994
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0844883918762207,
+  "stoi": 0.9997727035549681
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.079673767089844,
+  "stoi": 0.9999032501989982,
+  "delta_db": -33.611192257872716
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.492712497711182,
+  "stoi": 0.9998596904428056
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.7320735454559326,
+  "stoi": 0.9992528571655289
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.786238431930542,
+  "stoi": 0.9996883864424135,
+  "delta_db": -28.61119225787272
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.3830132484436035,
+  "stoi": 0.9995553504598118
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.4387142658233643,
+  "stoi": 0.9975784522286177
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.5107033252716064,
+  "stoi": 0.9989847541970944,
+  "delta_db": -23.61119225787272
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.210416793823242,
+  "stoi": 0.9985902156936766
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.231281280517578,
+  "stoi": 0.9923531742601788
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.624947547912598,
+  "stoi": 0.9999971440069602,
+  "delta_db": -49.99645885983583
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.634068012237549,
+  "stoi": 0.9999942636929778
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.998500347137451,
+  "stoi": 0.9999829042707031
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.59761905670166,
+  "stoi": 0.9999909791139897,
+  "delta_db": -44.99645885983583
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.615103721618652,
+  "stoi": 0.9999818668420413
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.6342668533325195,
+  "stoi": 0.9999435576619968
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.538167953491211,
+  "stoi": 0.9999715552573811,
+  "delta_db": -39.99645885983583
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.584230422973633,
+  "stoi": 0.9999426986641863
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1901276111602783,
+  "stoi": 0.9998127785891686
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.4248948097229,
+  "stoi": 0.9999108352106304,
+  "delta_db": -34.99645885983583
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.513181686401367,
+  "stoi": 0.9998190843193967
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.707003593444824,
+  "stoi": 0.9994059170317342
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.246656894683838,
+  "stoi": 0.9997234361301951,
+  "delta_db": -29.996458859835833
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.386663913726807,
+  "stoi": 0.9994300045510003
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.282226324081421,
+  "stoi": 0.9980296782649667
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.970965623855591,
+  "stoi": 0.9991310683991763,
+  "delta_db": -24.996458859835833
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.2312331199646,
+  "stoi": 0.998213374149555
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.9358594417572021,
+  "stoi": 0.9933426596912365
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.612464904785156,
+  "stoi": 0.9999924256973597,
+  "delta_db": -49.53348177000058
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.638847351074219,
+  "stoi": 0.9999943874345029
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.10363245010376,
+  "stoi": 0.99998427204273
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.565864562988281,
+  "stoi": 0.9999765673537047,
+  "delta_db": -44.53348177000058
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.62777853012085,
+  "stoi": 0.9999822486170519
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.6994898319244385,
+  "stoi": 0.9999482469823641
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.49220609664917,
+  "stoi": 0.9999289348844114,
+  "delta_db": -39.53348177000058
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.605667591094971,
+  "stoi": 0.999943871784026
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.2531979084014893,
+  "stoi": 0.9998308434794904
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.362679481506348,
+  "stoi": 0.999790861613326,
+  "delta_db": -34.53348177000058
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.558112144470215,
+  "stoi": 0.9998227891884729
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.7704522609710693,
+  "stoi": 0.9994478877124232
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.12991189956665,
+  "stoi": 0.9994035615227393,
+  "delta_db": -29.533481770000574
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.460906028747559,
+  "stoi": 0.9994437233689755
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.3152754306793213,
+  "stoi": 0.9981918803258721
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.7468838691711426,
+  "stoi": 0.9983704378654662,
+  "delta_db": -24.533481770000574
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.2885212898254395,
+  "stoi": 0.9982859640746251
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.953709602355957,
+  "stoi": 0.9940576829664389
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.575464725494385,
+  "stoi": 0.9999967744557795,
+  "delta_db": -48.67186179357176
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.6295928955078125,
+  "stoi": 0.9999945192273001
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.07546854019165,
+  "stoi": 0.9999896720977421
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.519440650939941,
+  "stoi": 0.9999897839258184,
+  "delta_db": -43.67186179357176
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.610764503479004,
+  "stoi": 0.9999826682167885
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.650644063949585,
+  "stoi": 0.9999651081185649
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.436282634735107,
+  "stoi": 0.9999676502685279,
+  "delta_db": -38.67186179357176
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.573485851287842,
+  "stoi": 0.9999451996117287
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.197514057159424,
+  "stoi": 0.9998848084747186
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.2383880615234375,
+  "stoi": 0.9998979241255952,
+  "delta_db": -33.67186179357176
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.4998321533203125,
+  "stoi": 0.9998268459109376
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.7196390628814697,
+  "stoi": 0.9996327456200154
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.121541976928711,
+  "stoi": 0.9996765285623217,
+  "delta_db": -28.67186179357176
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.377620697021484,
+  "stoi": 0.9994535909135682
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2956602573394775,
+  "stoi": 0.9988222815242641
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.8316431045532227,
+  "stoi": 0.9989607169070124,
+  "delta_db": -23.67186179357176
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.204681396484375,
+  "stoi": 0.998282573855787
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.9827786684036255,
+  "stoi": 0.9961294228884737
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.620914459228516,
+  "stoi": 0.9999965228529596,
+  "delta_db": -49.24365240341309
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.6363043785095215,
+  "stoi": 0.9999948731290709
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.008804798126221,
+  "stoi": 0.9999708387860736
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.593084812164307,
+  "stoi": 0.9999889818496827,
+  "delta_db": -44.24365240341309
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.624889373779297,
+  "stoi": 0.9999837916011499
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.555344343185425,
+  "stoi": 0.9999037616937788
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.532712936401367,
+  "stoi": 0.9999650347807274,
+  "delta_db": -39.24365240341308
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.5971150398254395,
+  "stoi": 0.9999487700031015
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0755057334899902,
+  "stoi": 0.9996864242037925
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.39203405380249,
+  "stoi": 0.9998889383962107,
+  "delta_db": -34.24365240341308
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.538591384887695,
+  "stoi": 0.9998381514487505
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.6074235439300537,
+  "stoi": 0.9989901517842316
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.17290735244751,
+  "stoi": 0.9996482764387284,
+  "delta_db": -29.24365240341308
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.414729118347168,
+  "stoi": 0.9994892630543486
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.180438995361328,
+  "stoi": 0.9967943386664885
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.894552230834961,
+  "stoi": 0.9988975331831449,
+  "delta_db": -24.24365240341308
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.228349208831787,
+  "stoi": 0.998393691239614
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.862168788909912,
+  "stoi": 0.9899913676989422
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.5807271003723145,
+  "stoi": 0.9999956075233576,
+  "delta_db": -48.882568040121626
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.6423258781433105,
+  "stoi": 0.999993795705905
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.123025417327881,
+  "stoi": 0.9999767239375482
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.532835006713867,
+  "stoi": 0.9999860842985643,
+  "delta_db": -43.882568040121626
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.6376495361328125,
+  "stoi": 0.9999803830984626
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.7541024684906006,
+  "stoi": 0.9999233974611981
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.460050582885742,
+  "stoi": 0.9999558632705334,
+  "delta_db": -38.882568040121626
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.614843368530273,
+  "stoi": 0.9999379804949946
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.2172787189483643,
+  "stoi": 0.9997489075876592
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.363373756408691,
+  "stoi": 0.999859774069788,
+  "delta_db": -33.882568040121626
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.545627593994141,
+  "stoi": 0.9998039331085329
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.6582655906677246,
+  "stoi": 0.9991926239155409
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.6212780475616455,
+  "stoi": 0.9995522103074933,
+  "delta_db": -28.882568040121626
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.4728569984436035,
+  "stoi": 0.9993801521749893
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.1636581420898438,
+  "stoi": 0.9973880372263308
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.0120961666107178,
+  "stoi": 0.998558579257569,
+  "delta_db": -23.882568040121626
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.361476898193359,
+  "stoi": 0.9980413509114524
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.6399667263031006,
+  "stoi": 0.9918870602595022
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.614382266998291,
+  "stoi": 0.9999971894294333,
+  "delta_db": -48.699441957230434
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.638646602630615,
+  "stoi": 0.9999952489689423
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8797671794891357,
+  "stoi": 0.9999781965987709
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.578242778778076,
+  "stoi": 0.9999911149712417,
+  "delta_db": -43.699441957230434
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.63142728805542,
+  "stoi": 0.9999849774495616
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.505174398422241,
+  "stoi": 0.9999331973062299
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.500107288360596,
+  "stoi": 0.999971921648213,
+  "delta_db": -38.69944195723044
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.609088897705078,
+  "stoi": 0.9999525008342259
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.110302448272705,
+  "stoi": 0.9997900295169262
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.356705665588379,
+  "stoi": 0.9999113269704575,
+  "delta_db": -33.69944195723044
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.555466175079346,
+  "stoi": 0.9998498230755399
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.677083730697632,
+  "stoi": 0.9993097246530284
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.133298873901367,
+  "stoi": 0.9997195898448792,
+  "delta_db": -28.699441957230437
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.4411468505859375,
+  "stoi": 0.9995254516616343
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2492635250091553,
+  "stoi": 0.9976359531220343
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.8784451484680176,
+  "stoi": 0.9991025803376945,
+  "delta_db": -23.699441957230437
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.248384952545166,
+  "stoi": 0.9985036126767475
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.9462190866470337,
+  "stoi": 0.9917211764599456
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.614685535430908,
+  "stoi": 0.999996955923378,
+  "delta_db": -49.66557500968878
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.640598297119141,
+  "stoi": 0.9999951545889161
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8691213130950928,
+  "stoi": 0.9999910105360587
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.568460464477539,
+  "stoi": 0.9999903752918444,
+  "delta_db": -44.66557500968878
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.633173942565918,
+  "stoi": 0.9999846732235261
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.4910390377044678,
+  "stoi": 0.9999707830601474
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.470961570739746,
+  "stoi": 0.9999695496745665,
+  "delta_db": -39.66557500968878
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.6090826988220215,
+  "stoi": 0.9999515109388781
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1083426475524902,
+  "stoi": 0.9999039233257064
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.293886184692383,
+  "stoi": 0.9999032987733052,
+  "delta_db": -34.66557500968878
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.5380682945251465,
+  "stoi": 0.9998465627902601
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.6986796855926514,
+  "stoi": 0.9996858185869346
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.1558837890625,
+  "stoi": 0.9996876123085306,
+  "delta_db": -29.66557500968878
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.362259864807129,
+  "stoi": 0.9995142343092502
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.3176279067993164,
+  "stoi": 0.9989614152774342
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.8819591999053955,
+  "stoi": 0.9989483362670155,
+  "delta_db": -24.66557500968878
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.199648380279541,
+  "stoi": 0.9984631063641217
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.0499088764190674,
+  "stoi": 0.9964730521934296
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.622954368591309,
+  "stoi": 0.9999948435694761,
+  "delta_db": -48.808653420734636
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.635827541351318,
+  "stoi": 0.9999949578532795
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.966254949569702,
+  "stoi": 0.999985469594131
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.59374475479126,
+  "stoi": 0.9999837212641598,
+  "delta_db": -43.808653420734636
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.6267781257629395,
+  "stoi": 0.999984054977467
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.607032299041748,
+  "stoi": 0.9999545960598661
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.484391689300537,
+  "stoi": 0.9999485364106043,
+  "delta_db": -38.808653420734636
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.583988666534424,
+  "stoi": 0.999949576827331
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.18796968460083,
+  "stoi": 0.9998560640595682
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.225600242614746,
+  "stoi": 0.9998360413156102,
+  "delta_db": -33.808653420734636
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.463680267333984,
+  "stoi": 0.9998405602986745
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.6641769409179688,
+  "stoi": 0.9995193742036574
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.996250629425049,
+  "stoi": 0.9994659998645201,
+  "delta_db": -28.808653420734643
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.277698993682861,
+  "stoi": 0.9994960646554931
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2101728916168213,
+  "stoi": 0.9983667309600376
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.679821491241455,
+  "stoi": 0.998238989571373,
+  "delta_db": -23.808653420734643
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.045894145965576,
+  "stoi": 0.9984101938909741
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.8995311260223389,
+  "stoi": 0.9947226931219096
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.585806369781494,
+  "stoi": 0.9999959039131219,
+  "delta_db": -48.63546778856967
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.642501354217529,
+  "stoi": 0.999993163536703
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.9296700954437256,
+  "stoi": 0.9999824908196778
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.517064094543457,
+  "stoi": 0.9999871033583074,
+  "delta_db": -43.63546778856967
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.638969421386719,
+  "stoi": 0.9999783751524288
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.523057222366333,
+  "stoi": 0.9999421900335912
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.4292826652526855,
+  "stoi": 0.9999594972701681,
+  "delta_db": -38.63546778856967
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.628611087799072,
+  "stoi": 0.999931588258383
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0990517139434814,
+  "stoi": 0.9998200015028548
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.293618679046631,
+  "stoi": 0.999872953554589,
+  "delta_db": -33.63546778856967
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.597809791564941,
+  "stoi": 0.9997835664114616
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.5839149951934814,
+  "stoi": 0.9994174537891359
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.510866165161133,
+  "stoi": 0.9995987894860202,
+  "delta_db": -28.635467788569674
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.526095390319824,
+  "stoi": 0.9993156371965821
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.163662910461426,
+  "stoi": 0.998002772538096
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 2.9175832271575928,
+  "stoi": 0.9987013075038171,
+  "delta_db": -23.635467788569674
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.358949184417725,
+  "stoi": 0.9978423759872609
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.8798820972442627,
+  "stoi": 0.9931424725596751
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.609487056732178,
+  "stoi": 0.9999957503774868,
+  "delta_db": -50.39259470760911
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.6239542961120605,
+  "stoi": 0.9999946966386902
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 3.9919111728668213,
+  "stoi": 0.9999856503649927
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.5551605224609375,
+  "stoi": 0.9999865545064145,
+  "delta_db": -45.39259470760911
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.596916198730469,
+  "stoi": 0.9999832148175178
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.684046745300293,
+  "stoi": 0.9999537227710031
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.4633002281188965,
+  "stoi": 0.9999574529009275,
+  "delta_db": -40.39259470760911
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.552612781524658,
+  "stoi": 0.9999468510762627
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.2513606548309326,
+  "stoi": 0.9998576595252067
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.288808345794678,
+  "stoi": 0.9998659364284347,
+  "delta_db": -35.39259470760911
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.4760050773620605,
+  "stoi": 0.9998316510132217
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.7694952487945557,
+  "stoi": 0.9995436414170474
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.017701148986816,
+  "stoi": 0.9995859950714404,
+  "delta_db": -30.392594707609113
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.3403849601745605,
+  "stoi": 0.9994669913729298
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2751331329345703,
+  "stoi": 0.9985340992648178
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.7142951488494873,
+  "stoi": 0.9988019091974245,
+  "delta_db": -25.392594707609113
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.081783771514893,
+  "stoi": 0.9983180325308089
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 1.8706374168395996,
+  "stoi": 0.9955316317892042
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.6407270431518555,
+  "stoi": 0.9999875043810392,
+  "delta_db": -50.62099546131289
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.642220497131348,
+  "stoi": 0.9999942245540282
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.182920455932617,
+  "stoi": 0.9999798718544206
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.627686500549316,
+  "stoi": 0.99996166023483,
+  "delta_db": -45.62099546131289
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.636218547821045,
+  "stoi": 0.9999817299594566
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.9239211082458496,
+  "stoi": 0.9999341470102429
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.582307815551758,
+  "stoi": 0.9998857845210524,
+  "delta_db": -40.62099546131289
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.6168742179870605,
+  "stoi": 0.9999422092744896
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.5326526165008545,
+  "stoi": 0.9997832050114284
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.464205741882324,
+  "stoi": 0.9996782475311156,
+  "delta_db": -35.62099546131289
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.587123870849609,
+  "stoi": 0.9998173209977879
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1663713455200195,
+  "stoi": 0.999299300771086
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.219342231750488,
+  "stoi": 0.9991556068143943,
+  "delta_db": -30.620995461312887
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.510270595550537,
+  "stoi": 0.9994239334504178
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.804030418395996,
+  "stoi": 0.9976664916560076
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.9735524654388428,
+  "stoi": 0.9979259608567405,
+  "delta_db": -25.620995461312887
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.371749401092529,
+  "stoi": 0.9981953794891726
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.4413375854492188,
+  "stoi": 0.9924118168251478
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.634344100952148,
+  "stoi": 0.9999974490395681,
+  "delta_db": -50.93556803855262
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.63814115524292,
+  "stoi": 0.9999948192024952
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.216801166534424,
+  "stoi": 0.999994102594343
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.6252546310424805,
+  "stoi": 0.9999920209544382,
+  "delta_db": -45.93556803855262
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.6324310302734375,
+  "stoi": 0.9999836097244154
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8933043479919434,
+  "stoi": 0.9999796910366745
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.598997116088867,
+  "stoi": 0.9999753015446831,
+  "delta_db": -40.93556803855262
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.623786449432373,
+  "stoi": 0.9999481364539494
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.4875876903533936,
+  "stoi": 0.9999369607015162
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.527801036834717,
+  "stoi": 0.999924979835233,
+  "delta_db": -35.93556803855262
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.60584831237793,
+  "stoi": 0.9998358583799051
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1160144805908203,
+  "stoi": 0.9998135146456196
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.346511363983154,
+  "stoi": 0.9997629016966076,
+  "delta_db": -30.935568038552617
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.543100357055664,
+  "stoi": 0.9994807435378407
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.7107670307159424,
+  "stoi": 0.9994403696304461
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.9579484462738037,
+  "stoi": 0.9991964446233094,
+  "delta_db": -25.935568038552617
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.402267932891846,
+  "stoi": 0.9983617231733931
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.419203758239746,
+  "stoi": 0.9981715387707066
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.6319499015808105,
+  "stoi": 0.9999977634934751,
+  "delta_db": -50.79787047989313
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.635645866394043,
+  "stoi": 0.9999947732071652
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.19788122177124,
+  "stoi": 0.9999902551959347
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.603283405303955,
+  "stoi": 0.9999929163953242,
+  "delta_db": -45.79787047989313
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.6158552169799805,
+  "stoi": 0.9999834722090741
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8829281330108643,
+  "stoi": 0.999968608555983
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.5356221199035645,
+  "stoi": 0.999977487180842,
+  "delta_db": -40.79787047989313
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.577435493469238,
+  "stoi": 0.9999477414157919
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.6312978267669678,
+  "stoi": 0.9998999340971041
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.416858196258545,
+  "stoi": 0.9999279649908145,
+  "delta_db": -35.79787047989313
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.509650230407715,
+  "stoi": 0.9998348070008618
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.2788665294647217,
+  "stoi": 0.9996807282057782
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.194503307342529,
+  "stoi": 0.9997691902605068,
+  "delta_db": -30.79787047989313
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.387071132659912,
+  "stoi": 0.9994781666833685
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.8029489517211914,
+  "stoi": 0.9990029096282276
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.921980142593384,
+  "stoi": 0.9992720995631121,
+  "delta_db": -25.79787047989313
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.190896034240723,
+  "stoi": 0.9983547009686354
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.36883544921875,
+  "stoi": 0.9968398419561084
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.639374732971191,
+  "stoi": 0.9999982113693376,
+  "delta_db": -51.143793887123586
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.634446144104004,
+  "stoi": 0.9999952734167787
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.385928630828857,
+  "stoi": 0.9999951111749491
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.629907131195068,
+  "stoi": 0.9999943751070333,
+  "delta_db": -46.143793887123586
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.62027645111084,
+  "stoi": 0.9999850607765
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 4.026062488555908,
+  "stoi": 0.999983855825609
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.602899551391602,
+  "stoi": 0.9999823282716701,
+  "delta_db": -41.143793887123586
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.589260578155518,
+  "stoi": 0.9999527967238389
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.5934910774230957,
+  "stoi": 0.9999462237407641
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.533163547515869,
+  "stoi": 0.9999441411916273,
+  "delta_db": -36.143793887123586
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.510653495788574,
+  "stoi": 0.999850923484986
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1091678142547607,
+  "stoi": 0.9998229271344482
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.430135250091553,
+  "stoi": 0.9998183373543068,
+  "delta_db": -31.143793887123586
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.416465759277344,
+  "stoi": 0.9995295629749155
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.5721733570098877,
+  "stoi": 0.9994412478835288
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.221612930297852,
+  "stoi": 0.9993787541970475,
+  "delta_db": -26.143793887123586
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.277153015136719,
+  "stoi": 0.9985192524635447
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.1512467861175537,
+  "stoi": 0.998230527289002
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.640092372894287,
+  "stoi": 0.9999972975943393,
+  "delta_db": -50.707450591173455
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.642925262451172,
+  "stoi": 0.999995092946226
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.155694961547852,
+  "stoi": 0.9999901179031238
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.6314520835876465,
+  "stoi": 0.9999914784713436,
+  "delta_db": -45.707450591173455
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.640472888946533,
+  "stoi": 0.9999845028455041
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.7941203117370605,
+  "stoi": 0.9999679141270134
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.604298114776611,
+  "stoi": 0.9999731840462844,
+  "delta_db": -40.707450591173455
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.6359076499938965,
+  "stoi": 0.9999511079778673
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.4664409160614014,
+  "stoi": 0.9998958593071624
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.539397716522217,
+  "stoi": 0.9999159518041243,
+  "delta_db": -35.707450591173455
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.618411064147949,
+  "stoi": 0.9998460177063401
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1158530712127686,
+  "stoi": 0.9996689317936946
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.3540263175964355,
+  "stoi": 0.9997383135820431,
+  "delta_db": -30.707450591173455
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.581520080566406,
+  "stoi": 0.9995161769873
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.749786853790283,
+  "stoi": 0.9989722682044351
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.9881606101989746,
+  "stoi": 0.9991836717511283,
+  "delta_db": -25.707450591173455
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.471381664276123,
+  "stoi": 0.9984810447938431
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.449368715286255,
+  "stoi": 0.9966841096106294
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.633299827575684,
+  "stoi": 0.9999978948592793,
+  "delta_db": -51.30637532930614
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.639530658721924,
+  "stoi": 0.9999944387554655
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.200423717498779,
+  "stoi": 0.9999928036917011
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.6177802085876465,
+  "stoi": 0.9999933360114901,
+  "delta_db": -46.30637532930614
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.631690979003906,
+  "stoi": 0.9999824161909088
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.9553701877593994,
+  "stoi": 0.9999763979727095
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.585075378417969,
+  "stoi": 0.9999788668803068,
+  "delta_db": -41.30637532930614
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.604009628295898,
+  "stoi": 0.9999444116391094
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.561786651611328,
+  "stoi": 0.9999221365400117
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.513986587524414,
+  "stoi": 0.9999326131279914,
+  "delta_db": -36.30637532930614
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.5434041023254395,
+  "stoi": 0.9998243373288747
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.1120476722717285,
+  "stoi": 0.9997455740349944
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.337729454040527,
+  "stoi": 0.9997825177214419,
+  "delta_db": -31.306375329306142
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.428339958190918,
+  "stoi": 0.9994454849750334
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.5848746299743652,
+  "stoi": 0.9991655912299063
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.0662922859191895,
+  "stoi": 0.9992938840964432,
+  "delta_db": -26.306375329306142
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.263130187988281,
+  "stoi": 0.9982546870476369
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.0550336837768555,
+  "stoi": 0.9973164248311484
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.639769077301025,
+  "stoi": 0.9999979616096196,
+  "delta_db": -51.12115916923854
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.6413984298706055,
+  "stoi": 0.9999944300549654
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.1429314613342285,
+  "stoi": 0.999991292739905
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.63132381439209,
+  "stoi": 0.9999935322451864,
+  "delta_db": -46.12115916923854
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.6365180015563965,
+  "stoi": 0.9999823783236168
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8276989459991455,
+  "stoi": 0.9999715050777743
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.610135078430176,
+  "stoi": 0.9999794131252822,
+  "delta_db": -41.12115916923854
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.623194694519043,
+  "stoi": 0.9999442367775127
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.473931312561035,
+  "stoi": 0.9999076102822431
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.541815757751465,
+  "stoi": 0.9999341592884289,
+  "delta_db": -36.12115916923854
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.59271240234375,
+  "stoi": 0.9998234863840803
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0436511039733887,
+  "stoi": 0.9997019142087956
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.3443603515625,
+  "stoi": 0.99978823629228,
+  "delta_db": -31.12115916923854
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.515395164489746,
+  "stoi": 0.9994410151008206
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.571582555770874,
+  "stoi": 0.9990567136438395
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.032729148864746,
+  "stoi": 0.9993133369328797,
+  "delta_db": -26.12115916923854
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.349148750305176,
+  "stoi": 0.9982313984992999
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.1295218467712402,
+  "stoi": 0.9969916255584345
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.63414192199707,
+  "stoi": 0.9999967730409944,
+  "delta_db": -51.22972231732255
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.638252258300781,
+  "stoi": 0.9999942057341403
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.221092224121094,
+  "stoi": 0.9999922775470769
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.605875015258789,
+  "stoi": 0.99998983519865,
+  "delta_db": -46.22972231732255
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.623600006103516,
+  "stoi": 0.9999816872336444
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.9050610065460205,
+  "stoi": 0.9999740891890252
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.553821563720703,
+  "stoi": 0.9999680837859551,
+  "delta_db": -41.22972231732255
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.588282585144043,
+  "stoi": 0.9999421513632114
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.5074610710144043,
+  "stoi": 0.9999137662734287
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.452155590057373,
+  "stoi": 0.9999006329406701,
+  "delta_db": -36.22972231732255
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.521158695220947,
+  "stoi": 0.9998174462846807
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.050673246383667,
+  "stoi": 0.9997178396782457
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.293956756591797,
+  "stoi": 0.9996968211538741,
+  "delta_db": -31.229722317322548
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.405574321746826,
+  "stoi": 0.9994251189677664
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.588834524154663,
+  "stoi": 0.999119511176807
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.9826161861419678,
+  "stoi": 0.9990694816946686,
+  "delta_db": -26.229722317322548
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.226901531219482,
+  "stoi": 0.9981981764591098
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.140022039413452,
+  "stoi": 0.9973286022491565
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.639133453369141,
+  "stoi": 0.99999777116741,
+  "delta_db": -51.13719361976929
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.636791706085205,
+  "stoi": 0.9999947806617973
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.116535663604736,
+  "stoi": 0.9999919416315505
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.626772403717041,
+  "stoi": 0.9999929514320411,
+  "delta_db": -46.13719361976929
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.626077175140381,
+  "stoi": 0.999983497966197
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.840831756591797,
+  "stoi": 0.9999736294769291
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.599426746368408,
+  "stoi": 0.99997774779274,
+  "delta_db": -41.13719361976929
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.59933614730835,
+  "stoi": 0.9999478314967405
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.5043604373931885,
+  "stoi": 0.9999153174559144
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.53124475479126,
+  "stoi": 0.9999303374934279,
+  "delta_db": -36.13719361976929
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.546910762786865,
+  "stoi": 0.9998351218865208
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0484230518341064,
+  "stoi": 0.9997317977484724
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.3502984046936035,
+  "stoi": 0.9997845377748111,
+  "delta_db": -31.137193619769295
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.472718238830566,
+  "stoi": 0.9994793222964259
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.576751708984375,
+  "stoi": 0.9991353437441463
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.089725971221924,
+  "stoi": 0.9993109902483416,
+  "delta_db": -26.137193619769295
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.315735816955566,
+  "stoi": 0.9983590327496736
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.1605827808380127,
+  "stoi": 0.9972407239672721
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.638651371002197,
+  "stoi": 0.9999965195349033,
+  "delta_db": -51.71754912404272
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.6414690017700195,
+  "stoi": 0.9999936078042956
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.2296600341796875,
+  "stoi": 0.9999866503877541
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.628873348236084,
+  "stoi": 0.9999889822829291,
+  "delta_db": -46.71754912404272
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.639043807983398,
+  "stoi": 0.9999797954068118
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 4.008591651916504,
+  "stoi": 0.9999573550203836
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.602297306060791,
+  "stoi": 0.999965310300013,
+  "delta_db": -41.71754912404272
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.627915382385254,
+  "stoi": 0.9999361677237921
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.705714702606201,
+  "stoi": 0.9998656743866065
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.546921253204346,
+  "stoi": 0.9998932187714424,
+  "delta_db": -36.717549124042726
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.598049163818359,
+  "stoi": 0.9997985220777182
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.2080447673797607,
+  "stoi": 0.999579336269189
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.416404724121094,
+  "stoi": 0.9996901276586134,
+  "delta_db": -31.71754912404272
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.521874904632568,
+  "stoi": 0.9993655852722215
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.666196346282959,
+  "stoi": 0.9986373234020101
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.145951271057129,
+  "stoi": 0.9991273472465014,
+  "delta_db": -26.717549124042726
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.371036052703857,
+  "stoi": 0.9980162983223598
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.1851253509521484,
+  "stoi": 0.9956152319042043
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.605856418609619,
+  "stoi": 0.999997587766457,
+  "delta_db": -51.161140277297015
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.621086120605469,
+  "stoi": 0.9999943785220798
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.0870161056518555,
+  "stoi": 0.9999873335485668
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.577698707580566,
+  "stoi": 0.9999923591949168,
+  "delta_db": -46.161140277297015
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.601022720336914,
+  "stoi": 0.9999822132233626
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.682274341583252,
+  "stoi": 0.9999578327852151
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.5057902336120605,
+  "stoi": 0.9999757867230479,
+  "delta_db": -41.161140277297015
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.559042930603027,
+  "stoi": 0.9999437041426109
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.334029197692871,
+  "stoi": 0.9998641971011075
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.397430896759033,
+  "stoi": 0.9999233544176896,
+  "delta_db": -36.161140277297015
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.478651523590088,
+  "stoi": 0.9998217481145558
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.984440803527832,
+  "stoi": 0.999562000084836
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.241705894470215,
+  "stoi": 0.999758509762386,
+  "delta_db": -31.161140277297015
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.3607635498046875,
+  "stoi": 0.9994349163304419
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.6398837566375732,
+  "stoi": 0.9985977479010907
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.9986793994903564,
+  "stoi": 0.9992454344823509,
+  "delta_db": -26.161140277297015
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.20892333984375,
+  "stoi": 0.9982058105859001
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.319178581237793,
+  "stoi": 0.9954342084583438
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.638504505157471,
+  "stoi": 0.9999979650661497,
+  "delta_db": -50.866093640253226
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.642574310302734,
+  "stoi": 0.9999943075068807
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.125443458557129,
+  "stoi": 0.9999943217514329
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.629132270812988,
+  "stoi": 0.9999936127125367,
+  "delta_db": -45.866093640253226
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.637547969818115,
+  "stoi": 0.9999819886535313
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.832418918609619,
+  "stoi": 0.9999815228841499
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.596629619598389,
+  "stoi": 0.9999800106905845,
+  "delta_db": -40.866093640253226
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.622997283935547,
+  "stoi": 0.9999429928288127
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.441401958465576,
+  "stoi": 0.9999396376377444
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.542674541473389,
+  "stoi": 0.9999371549918481,
+  "delta_db": -35.866093640253226
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.592045307159424,
+  "stoi": 0.999819437306303
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0513391494750977,
+  "stoi": 0.9998055344648665
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.434460639953613,
+  "stoi": 0.9997972813165101,
+  "delta_db": -30.86609364025323
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.4932451248168945,
+  "stoi": 0.9994276235564874
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.690406560897827,
+  "stoi": 0.9993926269952017
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.271585464477539,
+  "stoi": 0.9993297465117199,
+  "delta_db": -25.86609364025323
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.274603366851807,
+  "stoi": 0.9981897235094636
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.3682148456573486,
+  "stoi": 0.9981775149024613
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.628586769104004,
+  "stoi": 0.9999978284253306,
+  "delta_db": -51.60133018622144
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.617715358734131,
+  "stoi": 0.9999941120516704
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.088686943054199,
+  "stoi": 0.9999897455151082
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.5987229347229,
+  "stoi": 0.9999931017737562,
+  "delta_db": -46.60133018622144
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.577291488647461,
+  "stoi": 0.9999813907190179
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.813889265060425,
+  "stoi": 0.999966202055054
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.546710014343262,
+  "stoi": 0.9999780469652468,
+  "delta_db": -41.60133018622144
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.521050453186035,
+  "stoi": 0.9999411945454514
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.4322993755340576,
+  "stoi": 0.999888673137089
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.4407806396484375,
+  "stoi": 0.9999302289479849,
+  "delta_db": -36.60133018622143
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.449946403503418,
+  "stoi": 0.9998142178786497
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 2.9776556491851807,
+  "stoi": 0.9996421231311277
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.270603179931641,
+  "stoi": 0.999780211827167,
+  "delta_db": -31.601330186221436
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.356198787689209,
+  "stoi": 0.9994140034588517
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.582467555999756,
+  "stoi": 0.9989183791954523
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.042174339294434,
+  "stoi": 0.9993274197254383,
+  "delta_db": -26.601330186221436
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.110185146331787,
+  "stoi": 0.9981599113639932
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2925820350646973,
+  "stoi": 0.9968081304670249
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.622504234313965,
+  "stoi": 0.9999966994844711,
+  "delta_db": -51.43858906777591
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.633325576782227,
+  "stoi": 0.9999931738266892
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.118882656097412,
+  "stoi": 0.9999953336677657
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.560904502868652,
+  "stoi": 0.999989714161405,
+  "delta_db": -46.43858906777591
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.602147579193115,
+  "stoi": 0.9999784037829896
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8423309326171875,
+  "stoi": 0.9999845204166914
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.467708110809326,
+  "stoi": 0.9999680162741509,
+  "delta_db": -41.43858906777591
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.528645038604736,
+  "stoi": 0.9999316621662425
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.459968090057373,
+  "stoi": 0.9999488906328694
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.423833847045898,
+  "stoi": 0.9998992903414243,
+  "delta_db": -36.43858906777591
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.451770782470703,
+  "stoi": 0.9997837657392276
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.031144618988037,
+  "stoi": 0.9998326493240709
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.330785274505615,
+  "stoi": 0.9996706932107772,
+  "delta_db": -31.438589067775908
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.3954176902771,
+  "stoi": 0.9993166739587098
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.6041765213012695,
+  "stoi": 0.9994780564186401
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.134191513061523,
+  "stoi": 0.9989303772689158,
+  "delta_db": -26.438589067775908
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.256915092468262,
+  "stoi": 0.9978538794131028
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2331392765045166,
+  "stoi": 0.9984258815130552
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.605889320373535,
+  "stoi": 0.9999983543787632,
+  "delta_db": -51.39894576819073
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "energy",
+  "pesq_wb": 4.615017890930176,
+  "stoi": 0.9999948819691654
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -45.0,
+  "policy": "uniform",
+  "pesq_wb": 4.245612621307373,
+  "stoi": 0.9999907746731489
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.575104713439941,
+  "stoi": 0.9999947927664031,
+  "delta_db": -46.39894576819073
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "energy",
+  "pesq_wb": 4.585351467132568,
+  "stoi": 0.9999838079447719
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -40.0,
+  "policy": "uniform",
+  "pesq_wb": 3.8796770572662354,
+  "stoi": 0.9999698240194035
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.527401924133301,
+  "stoi": 0.9999835128633673,
+  "delta_db": -41.39894576819073
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "energy",
+  "pesq_wb": 4.550042152404785,
+  "stoi": 0.999948760762822
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -35.0,
+  "policy": "uniform",
+  "pesq_wb": 3.498553514480591,
+  "stoi": 0.9999021766391895
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.424607276916504,
+  "stoi": 0.9999477879703957,
+  "delta_db": -36.39894576819073
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "energy",
+  "pesq_wb": 4.494649887084961,
+  "stoi": 0.9998378284709379
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -30.0,
+  "policy": "uniform",
+  "pesq_wb": 3.0694963932037354,
+  "stoi": 0.9996866490657422
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "perceptual",
+  "pesq_wb": 4.188082218170166,
+  "stoi": 0.9998347084428751,
+  "delta_db": -31.398945768190725
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "energy",
+  "pesq_wb": 4.379061698913574,
+  "stoi": 0.9994868957951819
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -25.0,
+  "policy": "uniform",
+  "pesq_wb": 2.627469778060913,
+  "stoi": 0.9989935916517623
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "perceptual",
+  "pesq_wb": 3.908451795578003,
+  "stoi": 0.9994733421746854,
+  "delta_db": -26.398945768190725
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "energy",
+  "pesq_wb": 4.189643383026123,
+  "stoi": 0.9983798156474858
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "nsr_db": -20.0,
+  "policy": "uniform",
+  "pesq_wb": 2.2355058193206787,
+  "stoi": 0.9968470551933292
+ }
+]

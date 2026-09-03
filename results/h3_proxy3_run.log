@@ -1,0 +1,45 @@
+...0/90
+...10/90
+...20/90
+...30/90
+...40/90
+...50/90
+...60/90
+...70/90
+...80/90
+
+model       B           policy   PESQ   STOI overflow
+kokoro    0.1           energy  4.574  1.000     0.32
+kokoro    0.1  perceptual_excl  4.324  0.999     0.00
+kokoro    0.1  perceptual_incl  4.229  1.000     0.04
+kokoro    0.1           random  2.304  0.953     0.77
+kokoro    0.3           energy  4.123  1.000     0.51
+kokoro    0.3  perceptual_excl  3.214  0.992     0.36
+kokoro    0.3  perceptual_incl  3.146  0.995     0.35
+kokoro    0.3           random  1.285  0.852     0.77
+kokoro    0.5           energy  2.980  0.998     0.61
+kokoro    0.5  perceptual_excl  1.712  0.957     0.61
+kokoro    0.5  perceptual_incl  1.577  0.955     0.60
+kokoro    0.5           random  1.086  0.733     0.77
+piper     0.1           energy  4.642  1.000     0.00
+piper     0.1  perceptual_excl  4.557  1.000     0.00
+piper     0.1  perceptual_incl  4.541  1.000     0.00
+piper     0.1           random  2.322  0.951     0.77
+piper     0.3           energy  4.588  1.000     0.24
+piper     0.3  perceptual_excl  4.040  0.998     0.05
+piper     0.3  perceptual_incl  4.071  0.999     0.10
+piper     0.3           random  1.281  0.846     0.77
+piper     0.5           energy  4.401  1.000     0.47
+piper     0.5  perceptual_excl  2.686  0.980     0.50
+piper     0.5  perceptual_incl  2.318  0.976     0.52
+piper     0.5           random  1.086  0.719     0.77
+
+Paired Wilcoxon PESQ (perceptual_excl - energy):
+  piper B=0.1: -0.085 p=5.7e-14 n=45
+  piper B=0.3: -0.548 p=5.7e-14 n=45
+  piper B=0.5: -1.714 p=5.7e-14 n=45
+  kokoro B=0.1: -0.250 p=5.7e-14 n=45
+  kokoro B=0.3: -0.909 p=5.7e-14 n=45
+  kokoro B=0.5: -1.268 p=5.7e-14 n=45
+
+Mean safe pool (E < T_excl): {'piper': 0.23, 'kokoro': 0.229}

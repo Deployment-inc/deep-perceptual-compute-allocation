@@ -1,0 +1,872 @@
+{
+ "summary": {
+  "kokoro/agent": {
+   "cell_below_uniform_bark_mean": 0.15765086486947572,
+   "cell_below_linear_freq_mean": 0.1128997769572573,
+   "frame_fully_maskable_mean": 0.0,
+   "decoder_share": 0.956,
+   "h1_compute_ceiling_linfreq": 0.10793218677113797,
+   "h1_compute_temporal_only": 0.0,
+   "n_utts": 15
+  },
+  "kokoro/hinglish": {
+   "cell_below_uniform_bark_mean": 0.1532492036407177,
+   "cell_below_linear_freq_mean": 0.11546306024138046,
+   "frame_fully_maskable_mean": 0.0,
+   "decoder_share": 0.956,
+   "h1_compute_ceiling_linfreq": 0.11038268559075971,
+   "h1_compute_temporal_only": 0.0,
+   "n_utts": 15
+  },
+  "kokoro/narration": {
+   "cell_below_uniform_bark_mean": 0.16865626061868413,
+   "cell_below_linear_freq_mean": 0.12938375025178078,
+   "frame_fully_maskable_mean": 0.0,
+   "decoder_share": 0.956,
+   "h1_compute_ceiling_linfreq": 0.12369086524070243,
+   "h1_compute_temporal_only": 0.0,
+   "n_utts": 15
+  },
+  "piper/agent": {
+   "cell_below_uniform_bark_mean": 0.1814511661847097,
+   "cell_below_linear_freq_mean": 0.2511536192209158,
+   "frame_fully_maskable_mean": 0.0,
+   "decoder_share": 0.695,
+   "h1_compute_ceiling_linfreq": 0.17455176535853645,
+   "h1_compute_temporal_only": 0.0,
+   "n_utts": 15
+  },
+  "piper/hinglish": {
+   "cell_below_uniform_bark_mean": 0.18112435415989928,
+   "cell_below_linear_freq_mean": 0.25332002420008704,
+   "frame_fully_maskable_mean": 0.0,
+   "decoder_share": 0.695,
+   "h1_compute_ceiling_linfreq": 0.17605741681906048,
+   "h1_compute_temporal_only": 0.0,
+   "n_utts": 15
+  },
+  "piper/narration": {
+   "cell_below_uniform_bark_mean": 0.16070771481204685,
+   "cell_below_linear_freq_mean": 0.24545200364169348,
+   "frame_fully_maskable_mean": 0.0,
+   "decoder_share": 0.695,
+   "h1_compute_ceiling_linfreq": 0.17058914253097696,
+   "h1_compute_temporal_only": 0.0,
+   "n_utts": 15
+  }
+ },
+ "per_utterance": [
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 0,
+   "cell_below_uniform_bark": 0.2529330572808834,
+   "cell_below_linear_freq": 0.3017574801200532,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 126
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 1,
+   "cell_below_uniform_bark": 0.2073268921095008,
+   "cell_below_linear_freq": 0.2692585372897264,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 108
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 2,
+   "cell_below_uniform_bark": 0.16390614216701174,
+   "cell_below_linear_freq": 0.2385593613663789,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 126
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 3,
+   "cell_below_uniform_bark": 0.17326411421155094,
+   "cell_below_linear_freq": 0.2420936254400512,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 134
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 4,
+   "cell_below_uniform_bark": 0.19264757864969953,
+   "cell_below_linear_freq": 0.26621658029445794,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 123
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 5,
+   "cell_below_uniform_bark": 0.1802536231884058,
+   "cell_below_linear_freq": 0.24351242690058475,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 192
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 6,
+   "cell_below_uniform_bark": 0.17039641943734016,
+   "cell_below_linear_freq": 0.2568656117417727,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 136
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 7,
+   "cell_below_uniform_bark": 0.18179347826086956,
+   "cell_below_linear_freq": 0.2655701754385965,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 160
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 8,
+   "cell_below_uniform_bark": 0.18650954896383584,
+   "cell_below_linear_freq": 0.2435918456577581,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 107
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 9,
+   "cell_below_uniform_bark": 0.1647763074984247,
+   "cell_below_linear_freq": 0.2437212193123711,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 138
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 10,
+   "cell_below_uniform_bark": 0.15667166416791603,
+   "cell_below_linear_freq": 0.23885864085501107,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 116
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 11,
+   "cell_below_uniform_bark": 0.1702681593335069,
+   "cell_below_linear_freq": 0.23433834086213537,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 167
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 12,
+   "cell_below_uniform_bark": 0.14953886693017127,
+   "cell_below_linear_freq": 0.23161438950912633,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 132
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 13,
+   "cell_below_uniform_bark": 0.20563079116179614,
+   "cell_below_linear_freq": 0.2574537436487393,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 122
+  },
+  {
+   "model": "piper",
+   "domain": "agent",
+   "idx": 14,
+   "cell_below_uniform_bark": 0.16585084940973222,
+   "cell_below_linear_freq": 0.2338923098769735,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 151
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 0,
+   "cell_below_uniform_bark": 0.1795995735102476,
+   "cell_below_linear_freq": 0.25585990407444587,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 367
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 1,
+   "cell_below_uniform_bark": 0.18005540166204986,
+   "cell_below_linear_freq": 0.2568023629402839,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 361
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 2,
+   "cell_below_uniform_bark": 0.1532983508245877,
+   "cell_below_linear_freq": 0.24437610629383164,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 348
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 3,
+   "cell_below_uniform_bark": 0.1678948661262589,
+   "cell_below_linear_freq": 0.2568639111904054,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 354
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 4,
+   "cell_below_uniform_bark": 0.15635715265395694,
+   "cell_below_linear_freq": 0.2446916449904994,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 317
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 5,
+   "cell_below_uniform_bark": 0.15006543550966991,
+   "cell_below_linear_freq": 0.24200225573223283,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 299
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 6,
+   "cell_below_uniform_bark": 0.1650259775772491,
+   "cell_below_linear_freq": 0.24143955276030746,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 318
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 7,
+   "cell_below_uniform_bark": 0.13362233839092183,
+   "cell_below_linear_freq": 0.23449549256000868,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 341
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 8,
+   "cell_below_uniform_bark": 0.16337735569075532,
+   "cell_below_linear_freq": 0.2447757619304233,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 293
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 9,
+   "cell_below_uniform_bark": 0.15905926040538448,
+   "cell_below_linear_freq": 0.23962734039527445,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 281
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 10,
+   "cell_below_uniform_bark": 0.1571791423875691,
+   "cell_below_linear_freq": 0.2428474776096407,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 291
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 11,
+   "cell_below_uniform_bark": 0.15674328440875104,
+   "cell_below_linear_freq": 0.2371525061769782,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 314
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 12,
+   "cell_below_uniform_bark": 0.1578710644677661,
+   "cell_below_linear_freq": 0.2443973919473012,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 290
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 13,
+   "cell_below_uniform_bark": 0.16956521739130434,
+   "cell_below_linear_freq": 0.25526651878738993,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 290
+  },
+  {
+   "model": "piper",
+   "domain": "narration",
+   "idx": 14,
+   "cell_below_uniform_bark": 0.1609013011742304,
+   "cell_below_linear_freq": 0.24118182723637968,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 274
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 0,
+   "cell_below_uniform_bark": 0.17254004576659038,
+   "cell_below_linear_freq": 0.2524161280393967,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 190
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 1,
+   "cell_below_uniform_bark": 0.19491274770777878,
+   "cell_below_linear_freq": 0.26420548726313137,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 147
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 2,
+   "cell_below_uniform_bark": 0.17918313570487485,
+   "cell_below_linear_freq": 0.24788823911630928,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 132
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 3,
+   "cell_below_uniform_bark": 0.17315026697177727,
+   "cell_below_linear_freq": 0.2522257560730937,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 171
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 4,
+   "cell_below_uniform_bark": 0.2010614411104307,
+   "cell_below_linear_freq": 0.2697379860710723,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 213
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 5,
+   "cell_below_uniform_bark": 0.15305522914218567,
+   "cell_below_linear_freq": 0.23871239660713342,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 148
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 6,
+   "cell_below_uniform_bark": 0.20378767671379033,
+   "cell_below_linear_freq": 0.263672131931738,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 163
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 7,
+   "cell_below_uniform_bark": 0.18115942028985507,
+   "cell_below_linear_freq": 0.24197339754615294,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 204
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 8,
+   "cell_below_uniform_bark": 0.1838717512752004,
+   "cell_below_linear_freq": 0.2602066930205713,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 179
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 9,
+   "cell_below_uniform_bark": 0.19852941176470587,
+   "cell_below_linear_freq": 0.2584852654512097,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 136
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 10,
+   "cell_below_uniform_bark": 0.16568742655699178,
+   "cell_below_linear_freq": 0.23365470733891788,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 148
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 11,
+   "cell_below_uniform_bark": 0.1718855598107682,
+   "cell_below_linear_freq": 0.25411831247664357,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 193
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 12,
+   "cell_below_uniform_bark": 0.18868996874111962,
+   "cell_below_linear_freq": 0.25708061002178645,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 153
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 13,
+   "cell_below_uniform_bark": 0.18354430379746836,
+   "cell_below_linear_freq": 0.2590988723567005,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 158
+  },
+  {
+   "model": "piper",
+   "domain": "hinglish",
+   "idx": 14,
+   "cell_below_uniform_bark": 0.1658069270449521,
+   "cell_below_linear_freq": 0.24632437968744836,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 118
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 0,
+   "cell_below_uniform_bark": 0.13434579439252337,
+   "cell_below_linear_freq": 0.09267457324515858,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 107
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 1,
+   "cell_below_uniform_bark": 0.16924778761061948,
+   "cell_below_linear_freq": 0.11628629094861047,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 113
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 2,
+   "cell_below_uniform_bark": 0.16545893719806765,
+   "cell_below_linear_freq": 0.11575839760431675,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 138
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 3,
+   "cell_below_uniform_bark": 0.14955849889624723,
+   "cell_below_linear_freq": 0.10255218620502692,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 151
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 4,
+   "cell_below_uniform_bark": 0.17036290322580644,
+   "cell_below_linear_freq": 0.11167704206753443,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 124
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 5,
+   "cell_below_uniform_bark": 0.16328828828828829,
+   "cell_below_linear_freq": 0.12836520731257572,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 222
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 6,
+   "cell_below_uniform_bark": 0.16255868544600938,
+   "cell_below_linear_freq": 0.11867501304121023,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 142
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 7,
+   "cell_below_uniform_bark": 0.16134751773049646,
+   "cell_below_linear_freq": 0.12098212434158682,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 188
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 8,
+   "cell_below_uniform_bark": 0.15301724137931033,
+   "cell_below_linear_freq": 0.10427169456207568,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 116
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 9,
+   "cell_below_uniform_bark": 0.16423160173160173,
+   "cell_below_linear_freq": 0.12217412217412216,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 154
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 10,
+   "cell_below_uniform_bark": 0.14390756302521007,
+   "cell_below_linear_freq": 0.10229822923321373,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 119
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 11,
+   "cell_below_uniform_bark": 0.14774557165861513,
+   "cell_below_linear_freq": 0.10968914503112316,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 207
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 12,
+   "cell_below_uniform_bark": 0.1622222222222222,
+   "cell_below_linear_freq": 0.11386614684860298,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 150
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 13,
+   "cell_below_uniform_bark": 0.16085271317829458,
+   "cell_below_linear_freq": 0.11771461383864483,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 129
+  },
+  {
+   "model": "kokoro",
+   "domain": "agent",
+   "idx": 14,
+   "cell_below_uniform_bark": 0.15661764705882353,
+   "cell_below_linear_freq": 0.11651186790505674,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 170
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 0,
+   "cell_below_uniform_bark": 0.18689138576779027,
+   "cell_below_linear_freq": 0.141384672667937,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 445
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 1,
+   "cell_below_uniform_bark": 0.17389455782312926,
+   "cell_below_linear_freq": 0.13549747384333852,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 392
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 2,
+   "cell_below_uniform_bark": 0.17752274607113316,
+   "cell_below_linear_freq": 0.13676664780230144,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 403
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 3,
+   "cell_below_uniform_bark": 0.1634375,
+   "cell_below_linear_freq": 0.12450779727095515,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 400
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 4,
+   "cell_below_uniform_bark": 0.17355810008481765,
+   "cell_below_linear_freq": 0.14004335123928,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 393
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 5,
+   "cell_below_uniform_bark": 0.1709809264305177,
+   "cell_below_linear_freq": 0.13435951367974888,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 367
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 6,
+   "cell_below_uniform_bark": 0.1629574678536103,
+   "cell_below_linear_freq": 0.12381349020424456,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 337
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 7,
+   "cell_below_uniform_bark": 0.15948651000870323,
+   "cell_below_linear_freq": 0.1217382010291176,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 383
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 8,
+   "cell_below_uniform_bark": 0.16471354166666666,
+   "cell_below_linear_freq": 0.12264863547758284,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 320
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 9,
+   "cell_below_uniform_bark": 0.15876656472986747,
+   "cell_below_linear_freq": 0.11817515245810754,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 327
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 10,
+   "cell_below_uniform_bark": 0.1705223880597015,
+   "cell_below_linear_freq": 0.13251869308428615,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 335
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 11,
+   "cell_below_uniform_bark": 0.16362359550561797,
+   "cell_below_linear_freq": 0.12484394506866417,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 356
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 12,
+   "cell_below_uniform_bark": 0.17632850241545894,
+   "cell_below_linear_freq": 0.1332598807808571,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 345
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 13,
+   "cell_below_uniform_bark": 0.16973824786324787,
+   "cell_below_linear_freq": 0.13031064127555356,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 312
+  },
+  {
+   "model": "kokoro",
+   "domain": "narration",
+   "idx": 14,
+   "cell_below_uniform_bark": 0.157421875,
+   "cell_below_linear_freq": 0.12088815789473684,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 320
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 0,
+   "cell_below_uniform_bark": 0.16203703703703703,
+   "cell_below_linear_freq": 0.12751294622639653,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 198
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 1,
+   "cell_below_uniform_bark": 0.15,
+   "cell_below_linear_freq": 0.10819435419825282,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 135
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 2,
+   "cell_below_uniform_bark": 0.13468309859154928,
+   "cell_below_linear_freq": 0.09299069269417674,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 142
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 3,
+   "cell_below_uniform_bark": 0.16194158075601375,
+   "cell_below_linear_freq": 0.12346013946665058,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 194
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 4,
+   "cell_below_uniform_bark": 0.15833333333333333,
+   "cell_below_linear_freq": 0.12403898635477582,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 250
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 5,
+   "cell_below_uniform_bark": 0.14809523809523809,
+   "cell_below_linear_freq": 0.10636591478696741,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 175
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 6,
+   "cell_below_uniform_bark": 0.17794117647058824,
+   "cell_below_linear_freq": 0.142323128081642,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 170
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 7,
+   "cell_below_uniform_bark": 0.14485677083333334,
+   "cell_below_linear_freq": 0.11180403265107211,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 256
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 8,
+   "cell_below_uniform_bark": 0.15476190476190477,
+   "cell_below_linear_freq": 0.12553414186808015,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 203
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 9,
+   "cell_below_uniform_bark": 0.1348238482384824,
+   "cell_below_linear_freq": 0.09298087132918113,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 123
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 10,
+   "cell_below_uniform_bark": 0.1388888888888889,
+   "cell_below_linear_freq": 0.09843363333471583,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 141
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 11,
+   "cell_below_uniform_bark": 0.15206185567010308,
+   "cell_below_linear_freq": 0.12234480818311529,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 194
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 12,
+   "cell_below_uniform_bark": 0.17612474437627812,
+   "cell_below_linear_freq": 0.13093914062593429,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 163
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 13,
+   "cell_below_uniform_bark": 0.15546594982078854,
+   "cell_below_linear_freq": 0.12058521452975328,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 186
+  },
+  {
+   "model": "kokoro",
+   "domain": "hinglish",
+   "idx": 14,
+   "cell_below_uniform_bark": 0.14872262773722628,
+   "cell_below_linear_freq": 0.10443789928999302,
+   "frame_fully_maskable": 0.0,
+   "n_frames": 137
+  }
+ ],
+ "decoder_share_source": "results/stage_profile.json",
+ "notes": "conservative thresholds (min over bins per band); ceiling = decoder_share * cell_below_linear_freq; temporal = decoder_share * frame_fully_maskable"
+}

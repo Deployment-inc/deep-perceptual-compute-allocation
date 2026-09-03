@@ -1,0 +1,1442 @@
+[
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 0,
+  "text": "Sure \u2014 your order 4 8 2 ships Tuesday.",
+  "wav": "corpus/piper/agent_00.wav",
+  "sr": 22050,
+  "audio_s": 2.948934240362812,
+  "synth_s_median": 0.050964374997420236,
+  "synth_s_all": [
+   0.050964374997420236,
+   0.0506167080020532,
+   0.05266079200373497
+  ],
+  "rtf": 0.017282302975718446
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 1,
+  "text": "Thanks for calling. How can I help you today?",
+  "wav": "corpus/piper/agent_01.wav",
+  "sr": 22050,
+  "audio_s": 2.5425850340136056,
+  "synth_s_median": 0.050142332998802885,
+  "synth_s_all": [
+   0.05206308400374837,
+   0.04842262501188088,
+   0.050142332998802885
+  ],
+  "rtf": 0.019721005326476946
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 2,
+  "text": "Your balance is two thousand four hundred fifty rupees.",
+  "wav": "corpus/piper/agent_02.wav",
+  "sr": 22050,
+  "audio_s": 2.948934240362812,
+  "synth_s_median": 0.0514774170005694,
+  "synth_s_all": [
+   0.04936283300048672,
+   0.05169666701112874,
+   0.0514774170005694
+  ],
+  "rtf": 0.017456278372025028
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 3,
+  "text": "I can book that for the fourteenth of March at 9 30 AM.",
+  "wav": "corpus/piper/agent_03.wav",
+  "sr": 22050,
+  "audio_s": 3.1463038548752835,
+  "synth_s_median": 0.05675524999969639,
+  "synth_s_all": [
+   0.05675524999969639,
+   0.056573292007669806,
+   0.058137624990195036
+  ],
+  "rtf": 0.018038705928466695
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 4,
+  "text": "One moment, please. Let me pull up your account.",
+  "wav": "corpus/piper/agent_04.wav",
+  "sr": 22050,
+  "audio_s": 2.8792743764172335,
+  "synth_s_median": 0.052970832999562845,
+  "synth_s_all": [
+   0.055531083009555005,
+   0.05195279100735206,
+   0.052970832999562845
+  ],
+  "rtf": 0.018397285591613546
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 5,
+  "text": "The OTP is 7 3 9 2 1 6. It expires in ten minutes.",
+  "wav": "corpus/piper/agent_05.wav",
+  "sr": 22050,
+  "audio_s": 4.481451247165533,
+  "synth_s_median": 0.08045620899065398,
+  "synth_s_all": [
+   0.08045620899065398,
+   0.07936237499234267,
+   0.0808252499991795
+  ],
+  "rtf": 0.017953159490810396
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 6,
+  "text": "Got it. Your appointment with Doctor Mehta is confirmed.",
+  "wav": "corpus/piper/agent_06.wav",
+  "sr": 22050,
+  "audio_s": 3.1927437641723357,
+  "synth_s_median": 0.05827500000305008,
+  "synth_s_all": [
+   0.05827500000305008,
+   0.059399958001449704,
+   0.057982541009550914
+  ],
+  "rtf": 0.0182523259952735
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 7,
+  "text": "Your tracking number is B as in bravo, 4 7 X ray 9.",
+  "wav": "corpus/piper/agent_07.wav",
+  "sr": 22050,
+  "audio_s": 3.7500226757369615,
+  "synth_s_median": 0.06400008300261106,
+  "synth_s_all": [
+   0.06718583300244063,
+   0.06400008300261106,
+   0.06328254200343508
+  ],
+  "rtf": 0.017066585601388035
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 8,
+  "text": "Is there anything else I can help you with today?",
+  "wav": "corpus/piper/agent_08.wav",
+  "sr": 22050,
+  "audio_s": 2.5193650793650795,
+  "synth_s_median": 0.04461062500195112,
+  "synth_s_all": [
+   0.04378662499948405,
+   0.04461062500195112,
+   0.045498375009628944
+  ],
+  "rtf": 0.01770709031705469
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 9,
+  "text": "The total comes to forty nine dollars and ninety nine cents.",
+  "wav": "corpus/piper/agent_09.wav",
+  "sr": 22050,
+  "audio_s": 3.239183673469388,
+  "synth_s_median": 0.055227124990778975,
+  "synth_s_all": [
+   0.0541395409964025,
+   0.055227124990778975,
+   0.05591450000065379
+  ],
+  "rtf": 0.017049704665752077
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 10,
+  "text": "Please stay on the line while I transfer your call.",
+  "wav": "corpus/piper/agent_10.wav",
+  "sr": 22050,
+  "audio_s": 2.728344671201814,
+  "synth_s_median": 0.04886712499137502,
+  "synth_s_all": [
+   0.045799833998898976,
+   0.04957737500080839,
+   0.04886712499137502
+  ],
+  "rtf": 0.01791090601828157
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 11,
+  "text": "Your flight A I 3 0 2 departs Delhi at 6 45 PM.",
+  "wav": "corpus/piper/agent_11.wav",
+  "sr": 22050,
+  "audio_s": 3.900952380952381,
+  "synth_s_median": 0.067675500002224,
+  "synth_s_all": [
+   0.067675500002224,
+   0.06901629100320861,
+   0.06689074999303557
+  ],
+  "rtf": 0.017348455811116992
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 12,
+  "text": "I have updated the address to 2 2 1 B Baker Street.",
+  "wav": "corpus/piper/agent_12.wav",
+  "sr": 22050,
+  "audio_s": 3.0998639455782313,
+  "synth_s_median": 0.05642575000820216,
+  "synth_s_all": [
+   0.05670295799791347,
+   0.05642575000820216,
+   0.054490499998792075
+  ],
+  "rtf": 0.01820265372894513
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 13,
+  "text": "Sorry, I did not catch that. Could you repeat it?",
+  "wav": "corpus/piper/agent_13.wav",
+  "sr": 22050,
+  "audio_s": 2.8676643990929707,
+  "synth_s_median": 0.055860999986180104,
+  "synth_s_all": [
+   0.05571633299405221,
+   0.057220875009079464,
+   0.055860999986180104
+  ],
+  "rtf": 0.01947961553794394
+ },
+ {
+  "model": "piper",
+  "domain": "agent",
+  "idx": 14,
+  "text": "Your refund of one hundred twenty rupees was processed yesterday.",
+  "wav": "corpus/piper/agent_14.wav",
+  "sr": 22050,
+  "audio_s": 3.541043083900227,
+  "synth_s_median": 0.059880500004510395,
+  "synth_s_all": [
+   0.059425583996926434,
+   0.06161529199744109,
+   0.059880500004510395
+  ],
+  "rtf": 0.016910412718999155
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 0,
+  "text": "The river bent slowly through the valley, carrying with it the last light of the afternoon, and the fields on either side turned gold and then grey as the sun went down.",
+  "wav": "corpus/piper/narration_00.wav",
+  "sr": 22050,
+  "audio_s": 8.544943310657596,
+  "synth_s_median": 0.15200029200059362,
+  "synth_s_all": [
+   0.1502318330021808,
+   0.159561250009574,
+   0.15200029200059362
+  ],
+  "rtf": 0.017788332406022258
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 1,
+  "text": "In the early years of the city, before the railway came, goods moved by canal, and the pace of commerce was set by the walking speed of a horse.",
+  "wav": "corpus/piper/narration_01.wav",
+  "sr": 22050,
+  "audio_s": 8.417233560090702,
+  "synth_s_median": 0.14219654200132936,
+  "synth_s_all": [
+   0.14219654200132936,
+   0.13817395899968687,
+   0.14440800000738818
+  ],
+  "rtf": 0.016893500814274313
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 2,
+  "text": "She opened the notebook to the first page and began to write, carefully at first, then faster, as though the words had been waiting a long time to get out.",
+  "wav": "corpus/piper/narration_02.wav",
+  "sr": 22050,
+  "audio_s": 8.103764172335602,
+  "synth_s_median": 0.14238533400930464,
+  "synth_s_all": [
+   0.15021412499481812,
+   0.14152862501214258,
+   0.14238533400930464
+  ],
+  "rtf": 0.017570271170448865
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 3,
+  "text": "The mountain path rose steeply for the first mile, levelled through a forest of pine, and then broke suddenly into open meadow full of wildflowers.",
+  "wav": "corpus/piper/narration_03.wav",
+  "sr": 22050,
+  "audio_s": 8.25469387755102,
+  "synth_s_median": 0.1399600000004284,
+  "synth_s_all": [
+   0.13993679200939368,
+   0.1399600000004284,
+   0.14032674999907613
+  ],
+  "rtf": 0.01695520174055823
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 4,
+  "text": "Scientists have long wondered why some birds migrate thousands of miles each year while others remain in the same valley for their entire lives.",
+  "wav": "corpus/piper/narration_04.wav",
+  "sr": 22050,
+  "audio_s": 7.383945578231293,
+  "synth_s_median": 0.1328185839956859,
+  "synth_s_all": [
+   0.139089457996306,
+   0.1328185839956859,
+   0.1327223749976838
+  ],
+  "rtf": 0.017987481433672823
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 5,
+  "text": "The old clock in the hallway struck nine, and the house settled into the particular silence that comes only after everyone has gone to bed.",
+  "wav": "corpus/piper/narration_05.wav",
+  "sr": 22050,
+  "audio_s": 6.977596371882086,
+  "synth_s_median": 0.12344808399211615,
+  "synth_s_all": [
+   0.12628770800074562,
+   0.12330783299694303,
+   0.12344808399211615
+  ],
+  "rtf": 0.0176920643460519
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 6,
+  "text": "By morning the storm had passed, leaving the streets washed clean and the air so clear that the distant hills seemed close enough to touch.",
+  "wav": "corpus/piper/narration_06.wav",
+  "sr": 22050,
+  "audio_s": 7.418775510204082,
+  "synth_s_median": 0.132189500000095,
+  "synth_s_all": [
+   0.1321256670053117,
+   0.13496299998951145,
+   0.132189500000095
+  ],
+  "rtf": 0.01781823696084027
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 7,
+  "text": "The recipe had been in the family for four generations, and no one could say anymore which parts were original and which had been quietly improved.",
+  "wav": "corpus/piper/narration_07.wav",
+  "sr": 22050,
+  "audio_s": 7.952834467120182,
+  "synth_s_median": 0.14152499999909196,
+  "synth_s_all": [
+   0.14357737499813084,
+   0.13769733300432563,
+   0.14152499999909196
+  ],
+  "rtf": 0.017795542027714287
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 8,
+  "text": "He read the letter twice, folded it along its worn creases, and placed it back in the drawer where it had lived for twenty years.",
+  "wav": "corpus/piper/narration_08.wav",
+  "sr": 22050,
+  "audio_s": 6.826666666666667,
+  "synth_s_median": 0.1227373329893453,
+  "synth_s_all": [
+   0.12250100000528619,
+   0.12477062499965541,
+   0.1227373329893453
+  ],
+  "rtf": 0.01797910151211113
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 9,
+  "text": "The library smelled of old paper and floor polish, and the afternoon light fell in long stripes across the reading tables.",
+  "wav": "corpus/piper/narration_09.wav",
+  "sr": 22050,
+  "audio_s": 6.548027210884354,
+  "synth_s_median": 0.11504395899828523,
+  "synth_s_all": [
+   0.11083329199755099,
+   0.11504395899828523,
+   0.1183291250054026
+  ],
+  "rtf": 0.01756925487527835
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 10,
+  "text": "Every evening the fishermen hauled their boats up the beach, turned them over, and sat beside them mending nets until the light failed.",
+  "wav": "corpus/piper/narration_10.wav",
+  "sr": 22050,
+  "audio_s": 6.791836734693877,
+  "synth_s_median": 0.12086158299644012,
+  "synth_s_all": [
+   0.12112554199120495,
+   0.1187635410024086,
+   0.12086158299644012
+  ],
+  "rtf": 0.017795124900317205
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 11,
+  "text": "The experiment failed twice before it succeeded, and the third attempt worked for a reason nobody fully understood until years later.",
+  "wav": "corpus/piper/narration_11.wav",
+  "sr": 22050,
+  "audio_s": 7.314285714285714,
+  "synth_s_median": 0.12464858300518245,
+  "synth_s_all": [
+   0.12464858300518245,
+   0.12819116600439884,
+   0.12442125000234228
+  ],
+  "rtf": 0.017041798457739787
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 12,
+  "text": "Snow began to fall just after midnight, softly and without wind, so that by dawn every branch carried a thin white line.",
+  "wav": "corpus/piper/narration_12.wav",
+  "sr": 22050,
+  "audio_s": 6.768616780045352,
+  "synth_s_median": 0.1221201669977745,
+  "synth_s_all": [
+   0.1221201669977745,
+   0.12277554199681617,
+   0.12006429099710658
+  ],
+  "rtf": 0.01804211568865866
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 13,
+  "text": "The market opened at six, and by seven the narrow lanes were full of the smell of coriander, diesel, and fresh bread.",
+  "wav": "corpus/piper/narration_13.wav",
+  "sr": 22050,
+  "audio_s": 6.757006802721088,
+  "synth_s_median": 0.12011170899495482,
+  "synth_s_all": [
+   0.12127545800467487,
+   0.12011170899495482,
+   0.11942050000652671
+  ],
+  "rtf": 0.017775875102950183
+ },
+ {
+  "model": "piper",
+  "domain": "narration",
+  "idx": 14,
+  "text": "Nobody remembered who had planted the tamarind tree at the crossroads, but everyone agreed the village would be poorer without it.",
+  "wav": "corpus/piper/narration_14.wav",
+  "sr": 22050,
+  "audio_s": 6.3854875283446715,
+  "synth_s_median": 0.11344549999921583,
+  "synth_s_all": [
+   0.11686604100395925,
+   0.11194370800512843,
+   0.11344549999921583
+  ],
+  "rtf": 0.017766145418911285
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 0,
+  "text": "Aapka order confirm ho gaya hai, delivery Tuesday tak ho jayegi.",
+  "wav": "corpus/piper/hinglish_00.wav",
+  "sr": 22050,
+  "audio_s": 4.435011337868481,
+  "synth_s_median": 0.07898295798804611,
+  "synth_s_all": [
+   0.08019462499942165,
+   0.07898295798804611,
+   0.07265533300233074
+  ],
+  "rtf": 0.017808964165130243
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 1,
+  "text": "Haan ji, main aapki kya help kar sakta hoon?",
+  "wav": "corpus/piper/hinglish_01.wav",
+  "sr": 22050,
+  "audio_s": 3.436553287981859,
+  "synth_s_median": 0.059131374990101904,
+  "synth_s_all": [
+   0.05866145799518563,
+   0.059131374990101904,
+   0.05923741700826213
+  ],
+  "rtf": 0.017206593361113638
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 2,
+  "text": "Aapke account mein two thousand rupees ka balance hai.",
+  "wav": "corpus/piper/hinglish_02.wav",
+  "sr": 22050,
+  "audio_s": 3.0882539682539685,
+  "synth_s_median": 0.054007124999770895,
+  "synth_s_all": [
+   0.054827332991408184,
+   0.054007124999770895,
+   0.052709499999764375
+  ],
+  "rtf": 0.017487915681463642
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 3,
+  "text": "Please line par bane rahiye, main aapko transfer kar raha hoon.",
+  "wav": "corpus/piper/hinglish_03.wav",
+  "sr": 22050,
+  "audio_s": 3.9938321995464854,
+  "synth_s_median": 0.06589941699348856,
+  "synth_s_all": [
+   0.06966687500244007,
+   0.06589941699348856,
+   0.06581404099415522
+  ],
+  "rtf": 0.016500296883021695
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 4,
+  "text": "Aapka OTP hai 7 3 9 2 1 6, das minute mein expire hoga.",
+  "wav": "corpus/piper/hinglish_04.wav",
+  "sr": 22050,
+  "audio_s": 4.96907029478458,
+  "synth_s_median": 0.0861904999910621,
+  "synth_s_all": [
+   0.0861904999910621,
+   0.08501783300016541,
+   0.08719779198872857
+  ],
+  "rtf": 0.017345397605166832
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 5,
+  "text": "Doctor Mehta ke saath aapka appointment confirm ho gaya hai.",
+  "wav": "corpus/piper/hinglish_05.wav",
+  "sr": 22050,
+  "audio_s": 3.4713832199546486,
+  "synth_s_median": 0.06216766701254528,
+  "synth_s_all": [
+   0.06216766701254528,
+   0.06234883399156388,
+   0.05880412500118837
+  ],
+  "rtf": 0.01790861540586621
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 6,
+  "text": "Sorry, main samajh nahi paya. Phir se boliye please.",
+  "wav": "corpus/piper/hinglish_06.wav",
+  "sr": 22050,
+  "audio_s": 3.8080725623582765,
+  "synth_s_median": 0.07181500000297092,
+  "synth_s_all": [
+   0.07493879199319053,
+   0.07181500000297092,
+   0.0700140839908272
+  ],
+  "rtf": 0.018858621737632298
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 7,
+  "text": "Aapki flight A I 3 0 2 Delhi se 6 45 PM par depart karegi.",
+  "wav": "corpus/piper/hinglish_07.wav",
+  "sr": 22050,
+  "audio_s": 4.760090702947846,
+  "synth_s_median": 0.08549795800354332,
+  "synth_s_all": [
+   0.08973941700241994,
+   0.08546762500191107,
+   0.08549795800354332
+  ],
+  "rtf": 0.01796141362402944
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 8,
+  "text": "Refund process ho chuka hai, teen din mein account mein aa jayega.",
+  "wav": "corpus/piper/hinglish_08.wav",
+  "sr": 22050,
+  "audio_s": 4.191201814058957,
+  "synth_s_median": 0.07019058300647885,
+  "synth_s_all": [
+   0.07019058300647885,
+   0.07028779199754354,
+   0.06907999998657033
+  ],
+  "rtf": 0.01674712555502141
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 9,
+  "text": "Kya main aapki aur koi help kar sakta hoon?",
+  "wav": "corpus/piper/hinglish_09.wav",
+  "sr": 22050,
+  "audio_s": 3.1811337868480725,
+  "synth_s_median": 0.052823209000052884,
+  "synth_s_all": [
+   0.052823209000052884,
+   0.049881999992066994,
+   0.055948875000467524
+  ],
+  "rtf": 0.01660515166587543
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 10,
+  "text": "Aapka address update kar diya gaya hai, thank you.",
+  "wav": "corpus/piper/hinglish_10.wav",
+  "sr": 22050,
+  "audio_s": 3.4713832199546486,
+  "synth_s_median": 0.05848587499349378,
+  "synth_s_all": [
+   0.05225145899748895,
+   0.06044324999675155,
+   0.05848587499349378
+  ],
+  "rtf": 0.016848003025796116
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 11,
+  "text": "Payment successful hai, receipt aapke email par bhej di gayi hai.",
+  "wav": "corpus/piper/hinglish_11.wav",
+  "sr": 22050,
+  "audio_s": 4.516281179138322,
+  "synth_s_median": 0.08169883298978675,
+  "synth_s_all": [
+   0.08176812500460073,
+   0.07939704199088737,
+   0.08169883298978675
+  ],
+  "rtf": 0.018089846435419322
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 12,
+  "text": "Thoda wait kariye, main details check kar raha hoon.",
+  "wav": "corpus/piper/hinglish_12.wav",
+  "sr": 22050,
+  "audio_s": 3.5874829931972787,
+  "synth_s_median": 0.058943249998264946,
+  "synth_s_all": [
+   0.0559704169863835,
+   0.06061000000045169,
+   0.058943249998264946
+  ],
+  "rtf": 0.01643025210434039
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 13,
+  "text": "Aapka complaint number hai 5 8 2 4, note kar lijiye.",
+  "wav": "corpus/piper/hinglish_13.wav",
+  "sr": 22050,
+  "audio_s": 3.6919727891156464,
+  "synth_s_median": 0.06242845799715724,
+  "synth_s_all": [
+   0.06242845799715724,
+   0.0632277919939952,
+   0.06210645800456405
+  ],
+  "rtf": 0.016909241092242986
+ },
+ {
+  "model": "piper",
+  "domain": "hinglish",
+  "idx": 14,
+  "text": "Kal subah nine baje technician aapke ghar aayega.",
+  "wav": "corpus/piper/hinglish_14.wav",
+  "sr": 22050,
+  "audio_s": 2.7631746031746034,
+  "synth_s_median": 0.048842874995898455,
+  "synth_s_all": [
+   0.048842874995898455,
+   0.05236320800031535,
+   0.047883292005280964
+  ],
+  "rtf": 0.017676362159591008
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 0,
+  "text": "Sure \u2014 your order 4 8 2 ships Tuesday.",
+  "wav": "corpus/kokoro/agent_00.wav",
+  "sr": 24000,
+  "audio_s": 2.304,
+  "synth_s_median": 0.4190539160044864,
+  "synth_s_all": [
+   0.4190539160044864,
+   0.42086091700184625,
+   0.417783041993971
+  ],
+  "rtf": 0.1818810399325028
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 1,
+  "text": "Thanks for calling. How can I help you today?",
+  "wav": "corpus/kokoro/agent_01.wav",
+  "sr": 24000,
+  "audio_s": 2.432,
+  "synth_s_median": 0.4326949170063017,
+  "synth_s_all": [
+   0.4326949170063017,
+   0.43741533398861066,
+   0.43148508299782407
+  ],
+  "rtf": 0.1779173178479859
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 2,
+  "text": "Your balance is two thousand four hundred fifty rupees.",
+  "wav": "corpus/kokoro/agent_02.wav",
+  "sr": 24000,
+  "audio_s": 2.965333333333333,
+  "synth_s_median": 0.4970693749928614,
+  "synth_s_all": [
+   0.4970693749928614,
+   0.4945357080141548,
+   0.5085176670108922
+  ],
+  "rtf": 0.16762681261000273
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 3,
+  "text": "I can book that for the fourteenth of March at 9 30 AM.",
+  "wav": "corpus/kokoro/agent_03.wav",
+  "sr": 24000,
+  "audio_s": 3.2426666666666666,
+  "synth_s_median": 0.5314442090020748,
+  "synth_s_all": [
+   0.5334861659939634,
+   0.5314442090020748,
+   0.5284747499972582
+  ],
+  "rtf": 0.16389110063797538
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 4,
+  "text": "One moment, please. Let me pull up your account.",
+  "wav": "corpus/kokoro/agent_04.wav",
+  "sr": 24000,
+  "audio_s": 2.6666666666666665,
+  "synth_s_median": 0.4562425829935819,
+  "synth_s_all": [
+   0.4508569159952458,
+   0.46213250000437256,
+   0.4562425829935819
+  ],
+  "rtf": 0.1710909686225932
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 5,
+  "text": "The OTP is 7 3 9 2 1 6. It expires in ten minutes.",
+  "wav": "corpus/kokoro/agent_05.wav",
+  "sr": 24000,
+  "audio_s": 4.757333333333333,
+  "synth_s_median": 0.7010991669958457,
+  "synth_s_all": [
+   0.6948757499922067,
+   0.703517957997974,
+   0.7010991669958457
+  ],
+  "rtf": 0.14737230247950792
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 6,
+  "text": "Got it. Your appointment with Doctor Mehta is confirmed.",
+  "wav": "corpus/kokoro/agent_06.wav",
+  "sr": 24000,
+  "audio_s": 3.050666666666667,
+  "synth_s_median": 0.5096504160028417,
+  "synth_s_all": [
+   0.5096504160028417,
+   0.5086786669999128,
+   0.511154166990309
+  ],
+  "rtf": 0.16706198077016224
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 7,
+  "text": "Your tracking number is B as in bravo, 4 7 X ray 9.",
+  "wav": "corpus/kokoro/agent_07.wav",
+  "sr": 24000,
+  "audio_s": 4.032,
+  "synth_s_median": 0.6250624170061201,
+  "synth_s_all": [
+   0.6297558330115862,
+   0.6198452499957057,
+   0.6250624170061201
+  ],
+  "rtf": 0.15502540104318455
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 8,
+  "text": "Is there anything else I can help you with today?",
+  "wav": "corpus/kokoro/agent_08.wav",
+  "sr": 24000,
+  "audio_s": 2.496,
+  "synth_s_median": 0.44729904099949636,
+  "synth_s_all": [
+   0.44466766600089613,
+   0.4480053340084851,
+   0.44729904099949636
+  ],
+  "rtf": 0.1792063465542854
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 9,
+  "text": "The total comes to forty nine dollars and ninety nine cents.",
+  "wav": "corpus/kokoro/agent_09.wav",
+  "sr": 24000,
+  "audio_s": 3.3066666666666666,
+  "synth_s_median": 0.5468858749954961,
+  "synth_s_all": [
+   0.5468858749954961,
+   0.5495525419974001,
+   0.5409508330048993
+  ],
+  "rtf": 0.16538887348654116
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 10,
+  "text": "Please stay on the line while I transfer your call.",
+  "wav": "corpus/kokoro/agent_10.wav",
+  "sr": 24000,
+  "audio_s": 2.56,
+  "synth_s_median": 0.46211500000208616,
+  "synth_s_all": [
+   0.4617406249890337,
+   0.46211500000208616,
+   0.46485950000351295
+  ],
+  "rtf": 0.1805136718758149
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 11,
+  "text": "Your flight A I 3 0 2 departs Delhi at 6 45 PM.",
+  "wav": "corpus/kokoro/agent_11.wav",
+  "sr": 24000,
+  "audio_s": 4.437333333333333,
+  "synth_s_median": 0.679207833003602,
+  "synth_s_all": [
+   0.6732504999963567,
+   0.6873171250044834,
+   0.679207833003602
+  ],
+  "rtf": 0.15306666909636463
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 12,
+  "text": "I have updated the address to 2 2 1 B Baker Street.",
+  "wav": "corpus/kokoro/agent_12.wav",
+  "sr": 24000,
+  "audio_s": 3.2213333333333334,
+  "synth_s_median": 0.5282118750037625,
+  "synth_s_all": [
+   0.5303070840018336,
+   0.5247842079988914,
+   0.5282118750037625
+  ],
+  "rtf": 0.16397305722385014
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 13,
+  "text": "Sorry, I did not catch that. Could you repeat it?",
+  "wav": "corpus/kokoro/agent_13.wav",
+  "sr": 24000,
+  "audio_s": 2.7733333333333334,
+  "synth_s_median": 0.46764054099912755,
+  "synth_s_all": [
+   0.4764509169908706,
+   0.46704470900294837,
+   0.46764054099912755
+  ],
+  "rtf": 0.16862038737949311
+ },
+ {
+  "model": "kokoro",
+  "domain": "agent",
+  "idx": 14,
+  "text": "Your refund of one hundred twenty rupees was processed yesterday.",
+  "wav": "corpus/kokoro/agent_14.wav",
+  "sr": 24000,
+  "audio_s": 3.648,
+  "synth_s_median": 0.5898195000045234,
+  "synth_s_all": [
+   0.5917689170019003,
+   0.5898195000045234,
+   0.5885880420100875
+  ],
+  "rtf": 0.16168297697492418
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 0,
+  "text": "The river bent slowly through the valley, carrying with it the last light of the afternoon, and the fields on either side turned gold and then grey as the sun went down.",
+  "wav": "corpus/kokoro/narration_00.wav",
+  "sr": 24000,
+  "audio_s": 9.514666666666667,
+  "synth_s_median": 1.3060472080105683,
+  "synth_s_all": [
+   1.2834019170113606,
+   1.3060472080105683,
+   1.3157470409933012
+  ],
+  "rtf": 0.13726673290469818
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 1,
+  "text": "In the early years of the city, before the railway came, goods moved by canal, and the pace of commerce was set by the walking speed of a horse.",
+  "wav": "corpus/kokoro/narration_01.wav",
+  "sr": 24000,
+  "audio_s": 8.384,
+  "synth_s_median": 1.152967083005933,
+  "synth_s_all": [
+   1.152967083005933,
+   1.1432938749931054,
+   1.1655381669988856
+  ],
+  "rtf": 0.1375199287936466
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 2,
+  "text": "She opened the notebook to the first page and began to write, carefully at first, then faster, as though the words had been waiting a long time to get out.",
+  "wav": "corpus/kokoro/narration_02.wav",
+  "sr": 24000,
+  "audio_s": 8.618666666666666,
+  "synth_s_median": 1.1771555410086876,
+  "synth_s_all": [
+   1.1784487910044845,
+   1.1771555410086876,
+   1.170003999999608
+  ],
+  "rtf": 0.1365820940217382
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 3,
+  "text": "The mountain path rose steeply for the first mile, levelled through a forest of pine, and then broke suddenly into open meadow full of wildflowers.",
+  "wav": "corpus/kokoro/narration_03.wav",
+  "sr": 24000,
+  "audio_s": 8.554666666666666,
+  "synth_s_median": 1.1759589160064934,
+  "synth_s_all": [
+   1.1838327500008745,
+   1.1705286249925848,
+   1.1759589160064934
+  ],
+  "rtf": 0.13746402540599598
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 4,
+  "text": "Scientists have long wondered why some birds migrate thousands of miles each year while others remain in the same valley for their entire lives.",
+  "wav": "corpus/kokoro/narration_04.wav",
+  "sr": 24000,
+  "audio_s": 8.405333333333333,
+  "synth_s_median": 1.1784042079962092,
+  "synth_s_all": [
+   1.1784042079962092,
+   1.1860751670028549,
+   1.1698274159862194
+  ],
+  "rtf": 0.14019720114168097
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 5,
+  "text": "The old clock in the hallway struck nine, and the house settled into the particular silence that comes only after everyone has gone to bed.",
+  "wav": "corpus/kokoro/narration_05.wav",
+  "sr": 24000,
+  "audio_s": 7.850666666666666,
+  "synth_s_median": 1.1086643750022631,
+  "synth_s_all": [
+   1.1086643750022631,
+   1.123315165998065,
+   1.1078883339941967
+  ],
+  "rtf": 0.14121913744084535
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 6,
+  "text": "By morning the storm had passed, leaving the streets washed clean and the air so clear that the distant hills seemed close enough to touch.",
+  "wav": "corpus/kokoro/narration_06.wav",
+  "sr": 24000,
+  "audio_s": 7.210666666666667,
+  "synth_s_median": 1.0461470419977559,
+  "synth_s_all": [
+   1.055159209005069,
+   1.0374672079924494,
+   1.0461470419977559
+  ],
+  "rtf": 0.14508326211137518
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 7,
+  "text": "The recipe had been in the family for four generations, and no one could say anymore which parts were original and which had been quietly improved.",
+  "wav": "corpus/kokoro/narration_07.wav",
+  "sr": 24000,
+  "audio_s": 8.192,
+  "synth_s_median": 1.156262374992366,
+  "synth_s_all": [
+   1.156262374992366,
+   1.1701625840069028,
+   1.1498564170033205
+  ],
+  "rtf": 0.1411453094473103
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 8,
+  "text": "He read the letter twice, folded it along its worn creases, and placed it back in the drawer where it had lived for twenty years.",
+  "wav": "corpus/kokoro/narration_08.wav",
+  "sr": 24000,
+  "audio_s": 6.848,
+  "synth_s_median": 0.9830462079989957,
+  "synth_s_all": [
+   0.9830462079989957,
+   1.007533666008385,
+   0.9781866249977611
+  ],
+  "rtf": 0.1435523084110683
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 9,
+  "text": "The library smelled of old paper and floor polish, and the afternoon light fell in long stripes across the reading tables.",
+  "wav": "corpus/kokoro/narration_09.wav",
+  "sr": 24000,
+  "audio_s": 6.997333333333334,
+  "synth_s_median": 1.0110472919914173,
+  "synth_s_all": [
+   1.0110472919914173,
+   1.0072888330032583,
+   1.0110531250102213
+  ],
+  "rtf": 0.1444903713783466
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 10,
+  "text": "Every evening the fishermen hauled their boats up the beach, turned them over, and sat beside them mending nets until the light failed.",
+  "wav": "corpus/kokoro/narration_10.wav",
+  "sr": 24000,
+  "audio_s": 7.168,
+  "synth_s_median": 1.0371619170036865,
+  "synth_s_all": [
+   1.041143666006974,
+   1.0371619170036865,
+   1.015293707998353
+  ],
+  "rtf": 0.14469334779627324
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 11,
+  "text": "The experiment failed twice before it succeeded, and the third attempt worked for a reason nobody fully understood until years later.",
+  "wav": "corpus/kokoro/narration_11.wav",
+  "sr": 24000,
+  "audio_s": 7.616,
+  "synth_s_median": 1.0850848330010194,
+  "synth_s_all": [
+   1.0642814160091802,
+   1.0850848330010194,
+   1.1183024579950143
+  ],
+  "rtf": 0.1424743740810162
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 12,
+  "text": "Snow began to fall just after midnight, softly and without wind, so that by dawn every branch carried a thin white line.",
+  "wav": "corpus/kokoro/narration_12.wav",
+  "sr": 24000,
+  "audio_s": 7.381333333333333,
+  "synth_s_median": 1.0435078750015236,
+  "synth_s_all": [
+   1.0538007910072338,
+   1.0435078750015236,
+   1.0426615000033053
+  ],
+  "rtf": 0.14137118971299545
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 13,
+  "text": "The market opened at six, and by seven the narrow lanes were full of the smell of coriander, diesel, and fresh bread.",
+  "wav": "corpus/kokoro/narration_13.wav",
+  "sr": 24000,
+  "audio_s": 6.677333333333333,
+  "synth_s_median": 0.9605386249895673,
+  "synth_s_all": [
+   0.9605386249895673,
+   0.9630905000085477,
+   0.9502542919944972
+  ],
+  "rtf": 0.14385063273605742
+ },
+ {
+  "model": "kokoro",
+  "domain": "narration",
+  "idx": 14,
+  "text": "Nobody remembered who had planted the tamarind tree at the crossroads, but everyone agreed the village would be poorer without it.",
+  "wav": "corpus/kokoro/narration_14.wav",
+  "sr": 24000,
+  "audio_s": 6.848,
+  "synth_s_median": 0.982437625003513,
+  "synth_s_all": [
+   0.9853434160031611,
+   0.982437625003513,
+   0.9785136669961503
+  ],
+  "rtf": 0.1434634382306532
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 0,
+  "text": "Aapka order confirm ho gaya hai, delivery Tuesday tak ho jayegi.",
+  "wav": "corpus/kokoro/hinglish_00.wav",
+  "sr": 24000,
+  "audio_s": 4.245333333333333,
+  "synth_s_median": 0.6647755830053939,
+  "synth_s_all": [
+   0.6557010000105947,
+   0.6663007090101019,
+   0.6647755830053939
+  ],
+  "rtf": 0.15658972589637105
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 1,
+  "text": "Haan ji, main aapki kya help kar sakta hoon?",
+  "wav": "corpus/kokoro/hinglish_01.wav",
+  "sr": 24000,
+  "audio_s": 2.9013333333333335,
+  "synth_s_median": 0.5011005419946741,
+  "synth_s_all": [
+   0.5010360419983044,
+   0.5012939159933012,
+   0.5011005419946741
+  ],
+  "rtf": 0.17271388166176727
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 2,
+  "text": "Aapke account mein two thousand rupees ka balance hai.",
+  "wav": "corpus/kokoro/hinglish_02.wav",
+  "sr": 24000,
+  "audio_s": 3.050666666666667,
+  "synth_s_median": 0.519151457992848,
+  "synth_s_all": [
+   0.5124167500034673,
+   0.519151457992848,
+   0.5196437919948949
+  ],
+  "rtf": 0.1701763957581451
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 3,
+  "text": "Please line par bane rahiye, main aapko transfer kar raha hoon.",
+  "wav": "corpus/kokoro/hinglish_03.wav",
+  "sr": 24000,
+  "audio_s": 4.16,
+  "synth_s_median": 0.6486092919949442,
+  "synth_s_all": [
+   0.6486092919949442,
+   0.6500932499911869,
+   0.6481009580020327
+  ],
+  "rtf": 0.15591569519109236
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 4,
+  "text": "Aapka OTP hai 7 3 9 2 1 6, das minute mein expire hoga.",
+  "wav": "corpus/kokoro/hinglish_04.wav",
+  "sr": 24000,
+  "audio_s": 5.354666666666667,
+  "synth_s_median": 0.7991744580067461,
+  "synth_s_all": [
+   0.8061134999879869,
+   0.7991744580067461,
+   0.7937362919910811
+  ],
+  "rtf": 0.1492482180042479
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 5,
+  "text": "Doctor Mehta ke saath aapka appointment confirm ho gaya hai.",
+  "wav": "corpus/kokoro/hinglish_05.wav",
+  "sr": 24000,
+  "audio_s": 3.7546666666666666,
+  "synth_s_median": 0.6051019159931457,
+  "synth_s_all": [
+   0.6060017500130925,
+   0.6051019159931457,
+   0.6040660830039997
+  ],
+  "rtf": 0.1611599563191972
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 6,
+  "text": "Sorry, main samajh nahi paya. Phir se boliye please.",
+  "wav": "corpus/kokoro/hinglish_06.wav",
+  "sr": 24000,
+  "audio_s": 3.648,
+  "synth_s_median": 0.58191545799491,
+  "synth_s_all": [
+   0.580393666998134,
+   0.58191545799491,
+   0.5828496670001186
+  ],
+  "rtf": 0.15951629879246434
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 7,
+  "text": "Aapki flight A I 3 0 2 Delhi se 6 45 PM par depart karegi.",
+  "wav": "corpus/kokoro/hinglish_07.wav",
+  "sr": 24000,
+  "audio_s": 5.482666666666667,
+  "synth_s_median": 0.8069749580026837,
+  "synth_s_all": [
+   0.80789291599649,
+   0.8009212080069119,
+   0.8069749580026837
+  ],
+  "rtf": 0.1471865803750031
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 8,
+  "text": "Refund process ho chuka hai, teen din mein account mein aa jayega.",
+  "wav": "corpus/kokoro/hinglish_08.wav",
+  "sr": 24000,
+  "audio_s": 4.352,
+  "synth_s_median": 0.669463917001849,
+  "synth_s_all": [
+   0.6677489170106128,
+   0.6770270420092857,
+   0.669463917001849
+  ],
+  "rtf": 0.15382902504638074
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 9,
+  "text": "Kya main aapki aur koi help kar sakta hoon?",
+  "wav": "corpus/kokoro/hinglish_09.wav",
+  "sr": 24000,
+  "audio_s": 2.6453333333333333,
+  "synth_s_median": 0.4617647079867311,
+  "synth_s_all": [
+   0.4617647079867311,
+   0.4581661249976605,
+   0.6253453329991316
+  ],
+  "rtf": 0.1745582313457905
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 10,
+  "text": "Aapka address update kar diya gaya hai, thank you.",
+  "wav": "corpus/kokoro/hinglish_10.wav",
+  "sr": 24000,
+  "audio_s": 3.029333333333333,
+  "synth_s_median": 0.5073022500000661,
+  "synth_s_all": [
+   0.5073565420025261,
+   0.5054784169915365,
+   0.5073022500000661
+  ],
+  "rtf": 0.1674633307658669
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 11,
+  "text": "Payment successful hai, receipt aapke email par bhej di gayi hai.",
+  "wav": "corpus/kokoro/hinglish_11.wav",
+  "sr": 24000,
+  "audio_s": 4.16,
+  "synth_s_median": 0.6467517079872778,
+  "synth_s_all": [
+   0.6470080830040388,
+   0.6453437079908326,
+   0.6467517079872778
+  ],
+  "rtf": 0.15546916057386484
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 12,
+  "text": "Thoda wait kariye, main details check kar raha hoon.",
+  "wav": "corpus/kokoro/hinglish_12.wav",
+  "sr": 24000,
+  "audio_s": 3.498666666666667,
+  "synth_s_median": 0.5669155829964438,
+  "synth_s_all": [
+   0.5804552909976337,
+   0.5669155829964438,
+   0.5571762910112739
+  ],
+  "rtf": 0.16203760946925796
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 13,
+  "text": "Aapka complaint number hai 5 8 2 4, note kar lijiye.",
+  "wav": "corpus/kokoro/hinglish_13.wav",
+  "sr": 24000,
+  "audio_s": 3.989333333333333,
+  "synth_s_median": 0.6190405410015956,
+  "synth_s_all": [
+   0.6251425840018783,
+   0.6190405410015956,
+   0.6182718749914784
+  ],
+  "rtf": 0.15517393240347482
+ },
+ {
+  "model": "kokoro",
+  "domain": "hinglish",
+  "idx": 14,
+  "text": "Kal subah nine baje technician aapke ghar aayega.",
+  "wav": "corpus/kokoro/hinglish_14.wav",
+  "sr": 24000,
+  "audio_s": 2.944,
+  "synth_s_median": 0.4974342500063358,
+  "synth_s_all": [
+   0.5056904170050984,
+   0.4942984160006745,
+   0.4974342500063358
+  ],
+  "rtf": 0.16896543818149992
+ }
+]

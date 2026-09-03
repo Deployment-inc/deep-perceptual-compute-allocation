@@ -1,0 +1,44 @@
+...0/48
+...8/48
+...16/48
+...24/48
+...32/48
+...40/48
+
+H1 (pam2, calibrated -16 dB):
+model    domain      bin<thr  fr100%   fr95%
+kokoro   agent         0.117   0.000   0.000
+kokoro   hinglish      0.117   0.000   0.000
+kokoro   narration     0.113   0.000   0.000
+piper    agent         0.285   0.000   0.000
+piper    hinglish      0.291   0.000   0.000
+piper    narration     0.297   0.000   0.000
+
+H3 deletion (pam2 exclusive calibrated):
+model       B           policy   PESQ
+kokoro    0.1           energy  4.593
+kokoro    0.1  perceptual_excl  4.389
+kokoro    0.1           random  2.875
+kokoro    0.3           energy  4.304
+kokoro    0.3  perceptual_excl  3.192
+kokoro    0.3           random  1.625
+kokoro    0.5           energy  3.416
+kokoro    0.5  perceptual_excl  2.101
+kokoro    0.5           random  1.216
+piper     0.1           energy  4.643
+piper     0.1  perceptual_excl  4.634
+piper     0.1           random  2.758
+piper     0.3           energy  4.624
+piper     0.3  perceptual_excl  4.417
+piper     0.3           random  1.616
+piper     0.5           energy  4.465
+piper     0.5  perceptual_excl  3.604
+piper     0.5           random  1.195
+
+Wilcoxon PESQ (perceptual_excl - energy):
+  piper B=0.1: -0.009 p=1.2e-06 n=24
+  piper B=0.3: -0.207 p=1.2e-07 n=24
+  piper B=0.5: -0.861 p=1.2e-07 n=24
+  kokoro B=0.1: -0.204 p=1.2e-07 n=24
+  kokoro B=0.3: -1.112 p=1.2e-07 n=24
+  kokoro B=0.5: -1.316 p=1.2e-07 n=24

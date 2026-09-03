@@ -1,0 +1,55 @@
+...0/30
+...10/30
+...20/30
+
+model       NSR      policy   PESQ   STOI   Delta
+kokoro      -35      energy  1.280  0.827       -
+kokoro      -35  perceptual  1.602  0.745   -41.1
+kokoro      -35     uniform  1.102  0.420       -
+kokoro      -30      energy  1.280  0.827       -
+kokoro      -30  perceptual  1.602  0.745   -36.1
+kokoro      -30     uniform  1.102  0.420       -
+kokoro      -25      energy  1.280  0.827       -
+kokoro      -25  perceptual  1.602  0.745   -31.1
+kokoro      -25     uniform  1.102  0.420       -
+kokoro      -20      energy  1.281  0.827       -
+kokoro      -20  perceptual  1.602  0.745   -26.1
+kokoro      -20     uniform  1.103  0.420       -
+kokoro      -15      energy  1.281  0.827       -
+kokoro      -15  perceptual  1.602  0.745   -21.1
+kokoro      -15     uniform  1.102  0.420       -
+kokoro      -10      energy  1.281  0.827       -
+kokoro      -10  perceptual  1.602  0.745   -16.1
+kokoro      -10     uniform  1.103  0.420       -
+piper       -35      energy  1.314  0.821       -
+piper       -35  perceptual  1.428  0.740   -39.1
+piper       -35     uniform  1.062  0.381       -
+piper       -30      energy  1.332  0.821       -
+piper       -30  perceptual  1.433  0.740   -34.1
+piper       -30     uniform  1.060  0.381       -
+piper       -25      energy  1.330  0.821       -
+piper       -25  perceptual  1.432  0.740   -29.1
+piper       -25     uniform  1.066  0.381       -
+piper       -20      energy  1.330  0.821       -
+piper       -20  perceptual  1.424  0.740   -24.1
+piper       -20     uniform  1.066  0.381       -
+piper       -15      energy  1.330  0.821       -
+piper       -15  perceptual  1.424  0.740   -19.1
+piper       -15     uniform  1.065  0.381       -
+piper       -10      energy  1.330  0.821       -
+piper       -10  perceptual  1.424  0.740   -14.1
+piper       -10     uniform  1.070  0.381       -
+
+Paired Wilcoxon PESQ (perceptual - energy):
+  piper NSR=-35: +0.115 p=5.5e-02 n=15
+  piper NSR=-30: +0.102 p=8.3e-02 n=15
+  piper NSR=-25: +0.102 p=8.3e-02 n=15
+  piper NSR=-20: +0.093 p=1.2e-01 n=15
+  piper NSR=-15: +0.094 p=1.2e-01 n=15
+  piper NSR=-10: +0.094 p=1.2e-01 n=15
+  kokoro NSR=-35: +0.322 p=6.1e-05 n=15
+  kokoro NSR=-30: +0.321 p=6.1e-05 n=15
+  kokoro NSR=-25: +0.322 p=6.1e-05 n=15
+  kokoro NSR=-20: +0.321 p=6.1e-05 n=15
+  kokoro NSR=-15: +0.321 p=6.1e-05 n=15
+  kokoro NSR=-10: +0.321 p=6.1e-05 n=15

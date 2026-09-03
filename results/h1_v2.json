@@ -1,0 +1,146 @@
+{
+ "kokoro/agent/70": {
+  "bin_below_frac": 0.9794818765948242,
+  "frame_fully_maskable": 0.24214761643307284,
+  "frame_95pct_maskable": 0.8954033465819508,
+  "h1_ceiling": 0.9363846740246519,
+  "h1_temporal_100": 0.23149312131001762,
+  "h1_temporal_95": 0.8560055993323449
+ },
+ "kokoro/agent/80": {
+  "bin_below_frac": 0.9778232967040721,
+  "frame_fully_maskable": 0.18624404983616097,
+  "frame_95pct_maskable": 0.8855837145021759,
+  "h1_ceiling": 0.9347990716490929,
+  "h1_temporal_100": 0.17804931164336987,
+  "h1_temporal_95": 0.8466180310640801
+ },
+ "kokoro/agent/96": {
+  "bin_below_frac": 0.9768741791405035,
+  "frame_fully_maskable": 0.14525767052195568,
+  "frame_95pct_maskable": 0.8815114476343923,
+  "h1_ceiling": 0.9338917152583213,
+  "h1_temporal_100": 0.13886633301898962,
+  "h1_temporal_95": 0.842724943938479
+ },
+ "kokoro/hinglish/70": {
+  "bin_below_frac": 0.9785406723891137,
+  "frame_fully_maskable": 0.23762662032168755,
+  "frame_95pct_maskable": 0.8758517878740694,
+  "h1_ceiling": 0.9354848828039927,
+  "h1_temporal_100": 0.2271710490275333,
+  "h1_temporal_95": 0.8373143092076103
+ },
+ "kokoro/hinglish/80": {
+  "bin_below_frac": 0.9770622709481616,
+  "frame_fully_maskable": 0.19478893610591327,
+  "frame_95pct_maskable": 0.8667822027530856,
+  "h1_ceiling": 0.9340715310264424,
+  "h1_temporal_100": 0.1862182229172531,
+  "h1_temporal_95": 0.8286437858319498
+ },
+ "kokoro/hinglish/96": {
+  "bin_below_frac": 0.9761021484534946,
+  "frame_fully_maskable": 0.1431357426622558,
+  "frame_95pct_maskable": 0.8603490638410553,
+  "h1_ceiling": 0.9331536539215408,
+  "h1_temporal_100": 0.13683776998511651,
+  "h1_temporal_95": 0.8224937050320488
+ },
+ "kokoro/narration/70": {
+  "bin_below_frac": 0.9803721781174499,
+  "frame_fully_maskable": 0.2630807210198621,
+  "frame_95pct_maskable": 0.901827285260834,
+  "h1_ceiling": 0.9372358022802821,
+  "h1_temporal_100": 0.2515051692949881,
+  "h1_temporal_95": 0.8621468847093573
+ },
+ "kokoro/narration/80": {
+  "bin_below_frac": 0.9787533289044673,
+  "frame_fully_maskable": 0.2006596193893241,
+  "frame_95pct_maskable": 0.8889876026084,
+  "h1_ceiling": 0.9356881824326707,
+  "h1_temporal_100": 0.19183059613619385,
+  "h1_temporal_95": 0.8498721480936304
+ },
+ "kokoro/narration/96": {
+  "bin_below_frac": 0.9775061658737498,
+  "frame_fully_maskable": 0.13911883409285172,
+  "frame_95pct_maskable": 0.8836244820155037,
+  "h1_ceiling": 0.9344958945753048,
+  "h1_temporal_100": 0.13299760539276625,
+  "h1_temporal_95": 0.8447450048068215
+ },
+ "piper/agent/70": {
+  "bin_below_frac": 0.9797369770481045,
+  "frame_fully_maskable": 0.19485888605618332,
+  "frame_95pct_maskable": 0.9354149640947008,
+  "h1_ceiling": 0.6809171990484325,
+  "h1_temporal_100": 0.1354269258090474,
+  "h1_temporal_95": 0.650113400045817
+ },
+ "piper/agent/80": {
+  "bin_below_frac": 0.9784363948331464,
+  "frame_fully_maskable": 0.1687890738428216,
+  "frame_95pct_maskable": 0.9199737579234885,
+  "h1_ceiling": 0.6800132944090367,
+  "h1_temporal_100": 0.117308406320761,
+  "h1_temporal_95": 0.6393817617568245
+ },
+ "piper/agent/96": {
+  "bin_below_frac": 0.9776054909641296,
+  "frame_fully_maskable": 0.15730876530198604,
+  "frame_95pct_maskable": 0.9063817525610923,
+  "h1_ceiling": 0.6794358162200701,
+  "h1_temporal_100": 0.10932959188488028,
+  "h1_temporal_95": 0.6299353180299592
+ },
+ "piper/hinglish/70": {
+  "bin_below_frac": 0.9793727708230964,
+  "frame_fully_maskable": 0.19244084203395725,
+  "frame_95pct_maskable": 0.9213470881146718,
+  "h1_ceiling": 0.6806640757220519,
+  "h1_temporal_100": 0.13374638521360027,
+  "h1_temporal_95": 0.6403362262396969
+ },
+ "piper/hinglish/80": {
+  "bin_below_frac": 0.9780075990416456,
+  "frame_fully_maskable": 0.16003087635786084,
+  "frame_95pct_maskable": 0.9099822785471194,
+  "h1_ceiling": 0.6797152813339437,
+  "h1_temporal_100": 0.11122145906871328,
+  "h1_temporal_95": 0.632437683590248
+ },
+ "piper/hinglish/96": {
+  "bin_below_frac": 0.9770971368528496,
+  "frame_fully_maskable": 0.1497389904246763,
+  "frame_95pct_maskable": 0.8996777740945984,
+  "h1_ceiling": 0.6790825101127305,
+  "h1_temporal_100": 0.10406859834515003,
+  "h1_temporal_95": 0.6252760529957458
+ },
+ "piper/narration/70": {
+  "bin_below_frac": 0.9796364866552871,
+  "frame_fully_maskable": 0.15482207360146222,
+  "frame_95pct_maskable": 0.9336877609629911,
+  "h1_ceiling": 0.6808473582254245,
+  "h1_temporal_100": 0.10760134115301623,
+  "h1_temporal_95": 0.6489129938692788
+ },
+ "piper/narration/80": {
+  "bin_below_frac": 0.9780880707938984,
+  "frame_fully_maskable": 0.1147750777422149,
+  "frame_95pct_maskable": 0.9194585176322485,
+  "h1_ceiling": 0.6797712092017593,
+  "h1_temporal_100": 0.07976867903083935,
+  "h1_temporal_95": 0.6390236697544127
+ },
+ "piper/narration/96": {
+  "bin_below_frac": 0.9769166841791573,
+  "frame_fully_maskable": 0.10359633040023981,
+  "frame_95pct_maskable": 0.908149564934403,
+  "h1_ceiling": 0.6789570955045143,
+  "h1_temporal_100": 0.07199944962816666,
+  "h1_temporal_95": 0.6311639476294101
+ }
+}

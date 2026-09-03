@@ -1,0 +1,679 @@
+\documentclass[11pt, a4paper]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usetikzlibrary{shapes.geometric, arrows, patterns}
+\usepackage{fancyhdr}
+\usepackage{subcaption}
+
+% Theorem environments
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+% Custom commands
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+
+% ---- Single-point placeholders: fill before submission ----
+\newcommand{\headline}{[X]}                       % largest transparent budget from the ABX study (study/analyze.py)
+\newcommand{\repourl}{https://github.com/Deployment-inc/perceptual-compute-allocation}
+% -----------------------------------------------------------
+
+% Title and author
+\title{\textbf{Neural TTS Spends Compute on What Listeners Cannot Hear: \\ Perceptual Compute Allocation for CPU Speech Synthesis}}
+
+\author{
+  \centering
+  \begin{minipage}[t]{0.32\textwidth}
+    \centering
+    \textbf{Aayush Gupta}\\
+    Deployment Inc.\\
+    {\footnotesize\texttt{aayush@deployment.inc}}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.32\textwidth}
+    \centering
+    \textbf{Jayesh Gupta}\\
+    Deployment Inc.\\
+    {\footnotesize\texttt{jayesh@deployment.inc}}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.32\textwidth}
+    \centering
+    \textbf{Himanshu Rathore}\\
+    Deployment Inc.\\
+    {\footnotesize\texttt{himanshu@deployment.inc}}
+  \end{minipage}
+}
+
+\date{September 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Neural text-to-speech (TTS) systems spend roughly the same inference effort on every part of an utterance, even though human hearing is far more sensitive to some sounds than to others. Audio codecs have exploited this perceptual asymmetry for decades by spending \emph{bits} only where listeners can notice them. We ask whether neural speech synthesis can do the same with \emph{compute}. We study \textbf{perceptual compute allocation}---allocating synthesis effort according to perceptual importance rather than uniformly---on CPU TTS, where saved operations convert directly into latency and serving capacity. Across two CPU TTS families (VITS/HiFi-GAN and StyleTTS2/iSTFTNet) we find that a large fraction of time--frequency output can be removed when chosen by audibility, with far less perceptual degradation than random removal of the same amount. A pre-registered blind ABX study with 30 listeners, using hidden-reference and damaged-anchor controls, finds that \headline\% of spectral bins can be removed without reliable discrimination from the original synthesis. Surprisingly, sophisticated psychoacoustic masking models are unnecessary for locating this removable content: in a pre-registered criterion test, a simple signal-energy criterion matches or outperforms three masking-model implementations at every tested budget. Removable output, however, does not automatically translate into faster inference: dynamic INT8 quantization of the dominant decoder is up to $8\times$ \emph{slower} on CPU, showing that the remaining challenge is architectural rather than perceptual. Our results point to a design direction for speech synthesis---decoders that spend compute only where listeners can perceive the difference---and we release our tooling, corpus, listening-study instrument, and the complete harness, including the negative results.
+\end{abstract}
+
+\section{Introduction}
+\pagestyle{plain}
+
+Consider the utterance ``Sure---your order 4-8-2 ships Tuesday.'' It contains pauses, steady vowel interiors whose loud harmonics mask inter-harmonic error, fricatives whose fine structure the ear does not track, and plosive bursts and digits where the listener is maximally sensitive. A neural TTS system spends identical compute on every one of these regions. The waste is invisible on GPU, where batch parallelism hides per-item savings; it is visible on CPU, where cost-sensitive voice serving lives and every skipped operation returns directly as latency.
+
+The human auditory system provides a principled map of where fidelity matters. A psychoacoustic model (PAM) of the kind inside MPEG-1 Layer III~\cite{iso11172} computes, for any frame of audio, a per-band \emph{masking threshold} below which added error is inaudible~\cite{painter2000perceptual, zwicker2007psychoacoustics}. This model has been used to allocate bits at encode time~\cite{painter2000perceptual}, to weight gradients at training time~\cite{zhen2018psychoacoustically, zhen2020calibration}, and to place adversarial perturbations. It has not, to our knowledge, been used to allocate inference computation during synthesis. The visual analogue is foveated rendering~\cite{guenter2012foveated, patney2016foveated} and, recently, foveated generative synthesis~\cite{kaplanyan2019deepfovea}: the PAM would be our eye-tracker.
+
+We set out with three expectations. \emph{First}, that neural TTS produces a significant amount of perceptually redundant output. \emph{Second}, that a psychoacoustic model would be needed to find it. \emph{Third}, that identifying this redundancy would give a straightforward path to CPU savings. We fixed hypotheses and decision rules for all three before the main experiments (Section~\ref{sec:hyp}). Only the first expectation survived.
+
+\textbf{Surprise 1: the removable pool is large.} Ordering time--frequency content by audibility and removing the least audible fraction leaves a reference-based perceptual metric nearly untouched at budgets where random removal of the same amount is destroyed (Table~\ref{tab:teaser}); a pre-registered blind listening study puts the undetectable removal budget at \headline\% of bins (Section~\ref{sec:abx}).
+
+\textbf{Surprise 2: energy beats psychoacoustics.} The masking model is not needed to locate the pool. A trivial signal-energy ranking matches or beats three masking-model implementations at every matched budget, under two degradation operators, on both model families (Section~\ref{sec:h3}). For time--frequency removal, energy is a sufficient statistic of audibility.
+
+\textbf{Surprise 3: knowing what is removable does not let existing architectures skip the work.} A fixed neural circuit does not get cheaper because its output is ignorable, and the obvious post-hoc precision mechanism---dynamic INT8 quantization of the dominant decoder---runs $8\times$ slower than full precision on AVX-VNNI Intel and $4.8\times$ slower on Apple Silicon (Section~\ref{sec:rq4}). The binding constraint is architectural, not perceptual.
+
+\begin{table}[h]
+\centering
+\caption{How much can we remove? Mean wideband PESQ against the same-seed original after deleting a fraction of time--frequency bins under three placement policies (vetted, calibrated masking model; bin-matched budgets; Section~\ref{sec:h3}). PESQ 4.64 is the metric ceiling. The two audibility-ordered policies stay near the ceiling where random removal collapses; between them, energy is never worse.}
+\label{tab:teaser}
+\small
+\begin{tabular}{@{}llccc@{}}
+\toprule
+\textbf{Model} & \textbf{Policy} & \textbf{10\% removed} & \textbf{30\% removed} & \textbf{50\% removed} \\
+\midrule
+\multirow{3}{*}{Piper (VITS)} & random & 2.76 & 1.62 & 1.19 \\
+ & psychoacoustic masking & 4.63 & 4.42 & 3.60 \\
+ & signal energy & \textbf{4.64} & \textbf{4.62} & \textbf{4.46} \\
+\midrule
+\multirow{3}{*}{Kokoro (StyleTTS2)} & random & 2.87 & 1.63 & 1.22 \\
+ & psychoacoustic masking & 4.39 & 3.19 & 2.10 \\
+ & signal energy & \textbf{4.59} & \textbf{4.30} & \textbf{3.42} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We think the two failed expectations are as useful as the one that held. The second removes a piece of the original mechanism story and makes deployment cheaper: the ``eye-tracker'' costs nothing. The third names the actual open problem: allocation-native decoders that can decline to synthesize what listeners cannot hear.
+
+\subsection{Contributions}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Measurement of the perceptually removable pool} in two CPU TTS families, establishing with a reference-based metric and a pre-registered blind ABX study that audibility-ordered removal vastly outperforms random removal and is undetectable at a \headline\% bin budget (Sections~\ref{sec:h1}, \ref{sec:abx}).
+    \item \textbf{A pre-registered criterion test with a negative result:} signal energy matches or beats a psychoacoustic masking model for deciding \emph{where} to remove content. The sophisticated listener model is not needed for this decision (Section~\ref{sec:h3}).
+    \item \textbf{A characterization of the theoretical-vs-realized savings gap}, including the reproducible finding that dynamic INT8 quantization of the dominant decoder \emph{increases} wall-clock cost on both Intel and Apple CPUs (Section~\ref{sec:rq4}).
+    \item \textbf{Methodological artifacts:} a $\Delta$-probe that calibrates any inference-time PAM against a reference metric and an external codec anchor; evidence that PESQ's severities, though not its orderings, collapse on masked-removal distortions; and two design traps (criterion/operator matching, self-masking) that silently bias perceptual-gating experiments (Sections~\ref{sec:probe}, \ref{sec:traps}).
+    \item \textbf{Open release} of tooling, corpus, study instrument, and the full harness, including the negative-result experiments (\url{\repourl}).
+\end{enumerate}
+
+We claim the principle and its CPU-TTS instantiation. We do \emph{not} claim that a masking model beats energy, and we do not claim a realized end-to-end speedup; neither is supported by our data.
+
+\section{Background: The Listener Model}
+
+Masking is signal-dependent. A loud tonal component raises the detection threshold of quieter components at nearby frequencies, with the masking skirt spreading over the critical (Bark) bands of hearing~\cite{zwicker2007psychoacoustics}; for tens of milliseconds after a loud transient, quieter sounds are inaudible (forward masking); and an absolute threshold of hearing floors everything. A PAM identifies tonal and noise maskers per frame, spreads their influence across Bark bands, and combines them with the absolute threshold into a \emph{global masking threshold} $T(t,f)$~\cite{iso11172, bosi2003introduction}. We define \emph{headroom} as signal energy minus threshold per time--frequency cell; where headroom is negative, the listener is, at that instant, effectively deaf. Because thresholds change with content, level, and time, exploiting them at inference requires a model running \emph{during} synthesis rather than a static mask.
+
+\section{Hypotheses and Pre-Registered Decision Rules}
+\label{sec:hyp}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{H1 (existence).} A substantial fraction of CPU-TTS synthesis produces time--frequency output a listener cannot perceive.
+    \item \textbf{H2 (exploitability).} Making computation conditional on audibility reduces end-to-end wall-clock at transparent quality.
+    \item \textbf{H3 (criterion).} At matched compute budgets, masking-model-guided allocation outperforms energy-guided and random allocation on quality. \emph{Pre-registered fallback:} if H3 fails, the work is content-adaptive synthesis inference with a rigorous perceptual evaluation, and the negative is reported as a finding.
+\end{itemize}
+
+\emph{Transparency} is defined relative to the full-compute output of the same model, text, and seed. \emph{Matched budgets} compare allocation policies at equal expected compute. The claim-discipline rules we followed are stated in Appendix~\ref{app:discipline}. After H3 failed at proxy level, we logged an amendment (before any further analysis) moving the primary claim to the principle and its measurement; no hypothesis was weakened to fit a result.
+
+\section{Testbed and Method}
+
+\subsection{Models, hardware, corpus}
+
+We use two CPU-practical TTS families under ONNX Runtime~\cite{onnxruntime} with the CPU execution provider: \textbf{Piper}~\cite{piper} (voice \texttt{en\_US-lessac-medium}; a VITS~\cite{kim2021vits} system with a HiFi-GAN~\cite{kong2020hifigan} decoder, 22.05\,kHz) and \textbf{Kokoro v1.0}~\cite{kokoro} (a StyleTTS2~\cite{li2023styletts2} system with an iSTFTNet~\cite{kaneko2022istftnet} decoder, 24\,kHz). Hardware: an Apple M5 Pro (aarch64) and, for cross-architecture replication, an Intel Xeon Platinum 8488C (Sapphire Rapids, AVX-VNNI, 8 vCPU, AWS \texttt{c7i.2xlarge}). The corpus is 90 fixed-seed utterances over three domains: conversational agent speech with digits and entities, long-form narration, and romanized Hindi--English (Hinglish) agent speech, 15 per domain.\footnote{Hinglish is synthesized through an English voice and grapheme-to-phoneme model, as production English-voice agents do; a native Hindi voice is future work.}
+
+\subsection{Psychoacoustic tooling}
+
+We implement two PAMs on a common 1024-sample Hann / 512-hop STFT grid: (i) a from-scratch model in the MPEG-1 Model-1 lineage~\cite{iso11172, bosi2003introduction} (tonal/noise masker identification, two-slope spreading, absolute threshold after Terhardt~\cite{terhardt1979pitch}, forward temporal masking), and (ii) a vetted spreading-matrix model with nonlinear superposition ported from a reference audio-coding implementation~\cite{schuller2020filter}. Both are calibrated with the $\Delta$-probe of Section~\ref{sec:probe}. Model (i) is used for the Stage-1 existence measurement; model (ii), calibrated, for the final criterion test; the Model-1 results are retained because the conclusion is invariant to the choice.
+
+\subsection{Oracle degradation harness}
+\label{sec:harness}
+
+To test \emph{placement} independently of any mechanism, we degrade a budget-matched set of (frame, Bark-band) cells of the reference synthesis and compare policies at equal budgets, scoring against the same-seed full output with wideband PESQ~\cite{itu_p862, rix2001pesq} and STOI~\cite{taal2011stoi} at 16\,kHz. Round-trip fidelity of the analysis/synthesis path is 232\,dB SNR (PESQ 4.64, the metric ceiling). Two operators model two mechanism classes: \textbf{deletion} (zero a cell; models skipping synthesis) and \textbf{noise injection} (add fixed-level noise; models reduced-precision synthesis). Budgets are matched on FFT-bin count, a proxy for compute, rather than on cell count (Bark cells have unequal width). Policies:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{masking}: rank cells by signal-minus-threshold (deletion) or by threshold (noise), most maskable first;
+    \item \textbf{energy}: rank by band energy, quietest first (deletion) or loudest first (noise, the uniform-SNR heuristic);
+    \item \textbf{random}: fixed-seed uniform ranking.
+\end{itemize}
+
+\subsection{Two traps in perceptual-gating experiments}
+\label{sec:traps}
+
+Two design errors in our early iterations changed conclusions and are, we believe, general. \textbf{Criterion/operator matching:} ``signal is below threshold'' licenses \emph{deletion}; ``threshold is high enough to hide the error'' licenses \emph{noise}. Pairing a deletion criterion with a noise operator produced artifactual low-budget losses. \textbf{Self-masking:} a noise-like cell's threshold includes its own masker contribution, so it can justify its own removal---delete it and the masking that excused the deletion vanishes. Deletion decisions must use \emph{exclusive} (leave-self-out) thresholds. All results below use matched pairings and exclusive thresholds for deletion.
+
+\section{Results}
+
+\subsection{Where compute lives (cross-architecture)}
+\label{sec:rq2}
+
+Per-node ONNX Runtime kernel profiling (Table~\ref{tab:rq2}) shows one dominant, gateable stage in both families and on both architectures: the waveform decoder. By Amdahl's law~\cite{amdahl1967validity} it is the only worthwhile allocation target. Baseline real-time factors (median of 3 runs after warm-up): Piper 0.018 (M5 Pro) / 0.023 (Xeon); Kokoro 0.156 / 0.194. Phonemization is below 0.5\% of the pipeline.
+
+\begin{table}[h]
+\centering
+\caption{Share of ONNX kernel time by stage (six utterances spanning all domains).}
+\label{tab:rq2}
+\small
+\begin{tabular}{@{}llcc@{}}
+\toprule
+\textbf{Model} & \textbf{Stage} & \textbf{Apple M5 Pro} & \textbf{Intel Xeon 8488C} \\
+\midrule
+\multirow{4}{*}{Piper (VITS)} & HiFi-GAN decoder & \textbf{69.5\%} & \textbf{63.3\%} \\
+ & normalizing flow & 10.9\% & 12.5\% \\
+ & text encoder & 9.9\% & 12.8\% \\
+ & duration predictor & 7.0\% & 8.1\% \\
+\midrule
+\multirow{2}{*}{Kokoro (StyleTTS2)} & iSTFTNet decoder & \textbf{95.6\%} & \textbf{93.9\%} \\
+ & encoder + prosody & 4.3\% & 5.9\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{H1: the removable pool}
+\label{sec:h1}
+
+Figure~\ref{fig:money} shows the analysis for one agent utterance: signal energy, the masking threshold that tracks it, headroom, and the resulting binary map of cells where computation produces output the listener cannot hear. Pauses and the upper bands go dark; digit onsets stay bright.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/money_figure.png}
+\caption{``Sure---your order 4 8 2 ships Tuesday.'' (Piper). Top to bottom: Bark-band signal energy; masking threshold (Model-1 PAM, conservative min-over-bins); headroom (blue = maskable); binary below-threshold map. The pause at 0.4--0.85\,s and the upper bands are perceptually free; the plosive and digit onsets are not.}
+\label{fig:money}
+\end{figure}
+
+Because a fixed neural circuit does not spend compute per spectral line, ``the fraction of compute below threshold'' depends on how compute is attributed. Table~\ref{tab:h1} reports a ladder from conservative to generous. The important qualitative fact is a dichotomy that mirrors the codec insight: most signal \emph{energy} is audible (peaks stand 5\,dB or more above threshold), while most spectral \emph{bins} are perceptually free (inter-harmonic valleys, fricative fine structure). The pool is fine-structure freedom, not silence.
+
+\begin{table}[h]
+\centering
+\caption{Existence ladder (Model-1 PAM, 96\,dB full-scale calibration, mean over 45 utterances per model). Bin-level figures are a theoretical ceiling; frame-level figures are harvestable by per-frame gating.}
+\label{tab:h1}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Metric} & \textbf{Piper} & \textbf{Kokoro} \\
+\midrule
+Bins below threshold (ceiling) & 0.977 & 0.977 \\
+Frames with $\geq$95\% of bins below threshold & 0.90--0.91 & 0.86--0.88 \\
+Frames fully below threshold (pure frame skipping) & 0.10--0.16 & 0.14--0.15 \\
+Signal energy below threshold & $\approx$0.16 & $\approx$0.18 \\
+Bins below threshold, vetted PAM calibrated to PESQ ($\Delta=-16$\,dB) & 0.291 & 0.116 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The last row anticipates Section~\ref{sec:probe}: once the PAM is calibrated against a reference metric, the model-declared pool shrinks to 12--29\% of bins. The human-declared pool (Section~\ref{sec:abx}) is larger than either. This discrepancy---models are conservative, listeners are forgiving---is itself a finding.
+
+\subsection{H3: the criterion test}
+\label{sec:h3}
+
+\textbf{Audibility ordering is what matters.} Removing time--frequency content ordered by audibility is scored transparent by PESQ up to substantial budgets, whereas removing the same number of bins at random collapses PESQ toward 1.1--2.3 (Table~\ref{tab:h3}, Figure~\ref{fig:h3}). Allocating by audibility rather than uniformly is the entire game; the principle is strongly supported.
+
+\textbf{But energy is a sufficient statistic.} The pre-registered comparison of masking-guided against energy-guided placement gives the same answer under every variant we tried: the from-scratch Model-1 PAM (inclusive and exclusive thresholds), and the vetted, PESQ-calibrated spreading-matrix PAM. Energy matches or beats masking at every matched budget, both operators, both models, with paired Wilcoxon signed-rank $p<10^{-6}$ throughout (45 utterances per model per condition for Model-1; 24 for the vetted model); masking never significantly wins. Under the noise operator the ordering is the same, with the gap shrinking toward parity at the lowest budgets (PESQ 4.63 vs 4.63 at $-45$\,dB noise-to-signal on Kokoro) and both policies beating uniform placement by 1.5--2 PESQ points.
+
+\begin{table}[h]
+\centering
+\caption{Deletion operator, bin-matched budgets, mean wideband PESQ against the same-seed reference. Masking uses exclusive thresholds. All energy-vs-masking differences $p<10^{-6}$ (paired Wilcoxon).}
+\label{tab:h3}
+\small
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{PAM} & \textbf{Model} & \textbf{Budget} & \textbf{energy} & \textbf{masking} & \textbf{random} \\
+\midrule
+\multirow{6}{*}{Model-1 (90 utt.)} & \multirow{3}{*}{Kokoro} & 0.1 & \textbf{4.57} & 4.32 & 2.30 \\
+ & & 0.3 & \textbf{4.12} & 3.21 & 1.29 \\
+ & & 0.5 & \textbf{2.98} & 1.71 & 1.09 \\
+ & \multirow{3}{*}{Piper} & 0.1 & \textbf{4.64} & 4.56 & 2.32 \\
+ & & 0.3 & \textbf{4.59} & 4.04 & 1.28 \\
+ & & 0.5 & \textbf{4.40} & 2.69 & 1.09 \\
+\midrule
+\multirow{6}{*}{Vetted, calibrated (48 utt.)} & \multirow{3}{*}{Kokoro} & 0.1 & \textbf{4.59} & 4.39 & 2.87 \\
+ & & 0.3 & \textbf{4.30} & 3.19 & 1.63 \\
+ & & 0.5 & \textbf{3.42} & 2.10 & 1.22 \\
+ & \multirow{3}{*}{Piper} & 0.1 & \textbf{4.64} & 4.63 & 2.76 \\
+ & & 0.3 & \textbf{4.62} & 4.42 & 1.62 \\
+ & & 0.5 & \textbf{4.46} & 3.60 & 1.19 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Kokoro (deletion, vetted PAM)},
+    xlabel={fraction of bins removed},
+    ylabel={PESQ (WB)},
+    xmin=0.05, xmax=0.55, ymin=1, ymax=4.8,
+    xtick={0.1,0.3,0.5},
+    legend pos=south west, legend style={font=\scriptsize},
+    grid=major, width=\textwidth, height=5.2cm,
+]
+\addplot[color=blue, mark=*, thick] coordinates {(0.1,4.59) (0.3,4.30) (0.5,3.42)};
+\addlegendentry{energy}
+\addplot[color=red, mark=square*, thick] coordinates {(0.1,4.39) (0.3,3.19) (0.5,2.10)};
+\addlegendentry{masking}
+\addplot[color=gray, mark=triangle*, thick] coordinates {(0.1,2.87) (0.3,1.63) (0.5,1.22)};
+\addlegendentry{random}
+\end{axis}
+\end{tikzpicture}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Piper (deletion, vetted PAM)},
+    xlabel={fraction of bins removed},
+    ylabel={PESQ (WB)},
+    xmin=0.05, xmax=0.55, ymin=1, ymax=4.8,
+    xtick={0.1,0.3,0.5},
+    legend pos=south west, legend style={font=\scriptsize},
+    grid=major, width=\textwidth, height=5.2cm,
+]
+\addplot[color=blue, mark=*, thick] coordinates {(0.1,4.64) (0.3,4.62) (0.5,4.46)};
+\addlegendentry{energy}
+\addplot[color=red, mark=square*, thick] coordinates {(0.1,4.63) (0.3,4.42) (0.5,3.60)};
+\addlegendentry{masking}
+\addplot[color=gray, mark=triangle*, thick] coordinates {(0.1,2.76) (0.3,1.62) (0.5,1.19)};
+\addlegendentry{random}
+\end{axis}
+\end{tikzpicture}
+\end{subfigure}
+\caption{The criterion test. Audibility-ordered removal (energy or masking) dominates random removal by 2--3 PESQ points; between the two audibility criteria, energy is never worse. H3 as pre-registered fails.}
+\label{fig:h3}
+\end{figure}
+
+\textbf{Interpretation.} For deciding \emph{where} a listener cannot hear removed content, signal energy already captures nearly all the usable information; the masking model's additional machinery (spreading, inter-band masking, absolute threshold) does not improve the decision. Under the pre-registered fallback, the paper stands on the principle, the measurement, and this negative.
+
+\subsection{The $\Delta$-probe and a metric caveat}
+\label{sec:probe}
+
+An inference-time PAM must be trusted before its decisions are acted on. We introduce a \textbf{$\Delta$-probe}: inject noise shaped exactly at the PAM's own threshold curve, offset by $\Delta$\,dB, and locate the $\Delta$ at which a reference metric declares transparency. A correctly calibrated PAM reaches transparency near $\Delta=0$; the crossing measures its miscalibration. As an external anchor, LAME MP3 round-trips of our corpus audio at 128 and 64\,kbps score PESQ 4.64 and 4.54: the metric is content with noise at \emph{real} codec thresholds. Our from-scratch Model-1 implementation required $\Delta\approx-30$ to $-40$\,dB (its thresholds were tens of decibels too permissive, traced to band-summed noise maskers); the vetted spreading-matrix model required $\Delta\approx-16$\,dB under codec-realistic capping of the noise at the signal magnitude (Figure~\ref{fig:probe}), consistent with its lack of tonality handling on strongly harmonic speech. The probe is a reusable, one-number validation for any PAM used at inference.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={$\Delta$ (noise level relative to PAM threshold, dB)},
+    ylabel={PESQ (WB)},
+    xmin=-14, xmax=14, ymin=1, ymax=4.8,
+    xtick={-12,-6,0,6,12},
+    legend pos=north east, legend style={font=\scriptsize},
+    grid=major, width=10cm, height=5.5cm,
+]
+\addplot[color=blue, mark=*, thick] coordinates {(-12,4.07) (-6,3.62) (0,2.83) (6,1.93) (12,1.48)};
+\addlegendentry{vetted PAM, noise capped at signal}
+\addplot[color=red, mark=square*, thick, dashed] coordinates {(-12,3.73) (-6,2.84) (0,1.90) (6,1.30) (12,1.15)};
+\addlegendentry{vetted PAM, uncapped}
+\addplot[color=black, thick, dotted, domain=-14:14] {4.4};
+\addlegendentry{transparency (4.4)}
+\end{axis}
+\end{tikzpicture}
+\caption{$\Delta$-probe on the vetted PAM (18 utterances). Noise at the model's own threshold ($\Delta=0$) is far from transparent; transparency requires $\Delta\approx-16$\,dB. Real MP3 noise on the same audio scores 4.54--4.64.}
+\label{fig:probe}
+\end{figure}
+
+\textbf{Metric caveat.} PESQ's \emph{orderings} were informative throughout, but its \emph{severities} are not to be trusted on this distortion class: in the listening pilot (Section~\ref{sec:abx}), clips a listener could not distinguish from the reference received PESQ scores as low as 1.2--3.5. PESQ was validated on telephony degradations, not masked spectral removal. We therefore use PESQ as an ordering-only screen and require human judgement for any transparency claim.
+
+\subsection{RQ3: can inaudibility be predicted before the waveform exists?}
+\label{sec:rq3}
+
+Masking thresholds estimated from 80-band mel-resolution features (a proxy for pre-waveform representations) agree with ground-truth thresholds to 2.8\,dB RMSE and 96\% cell-decision agreement on both models, but the unsafe direction---predicted inaudible, actually audible---occurs in 11.4\% (Piper) and 12.5\% (Kokoro) of predicted-maskable cells (30 utterances). Predictive gating is feasible with a conservative margin; draft-based verification on the produced audio remains the safe fallback.
+
+\subsection{RQ4: theoretical versus realized savings}
+\label{sec:rq4}
+
+Removing perceptually unnecessary output saves nothing until the computation is made conditional. We tested the most obvious post-hoc precision mechanism as an aligned instance of ``spend fewer bits where error is inaudible'': dynamic INT8 quantization of the dominant decoder, after splitting Kokoro's graph at its five encoder/decoder boundary tensors (the split is bit-exact against the monolithic model). Table~\ref{tab:int8} reports the result. The INT8 decoder is $8.1\times$ \emph{slower} than full precision on AVX-VNNI Intel and $4.8\times$ slower on Apple Silicon. The cause is structural: the iSTFTNet decoder is dominated by transposed convolutions and an inverse-STFT block that the runtime's dynamic-quantization path cannot map to integer kernels, so it wraps still-floating-point operators in quantize/dequantize overhead. Realized and theoretical savings here differ in sign. We also found that whole-model quantization is unusable as a draft even in principle, because it shifts the duration predictor and misaligns the output; only a decoder-only split preserves alignment.
+
+\begin{table}[h]
+\centering
+\caption{Kokoro decoder wall-clock for five utterances, best of three runs after warm-up, single process.}
+\label{tab:int8}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Hardware} & \textbf{fp32} & \textbf{dynamic INT8} & \textbf{INT8 speed-up} \\
+\midrule
+Intel Xeon 8488C (AVX-VNNI) & 4.78\,s & 38.56\,s & $0.12\times$ \\
+Apple M5 Pro & 3.87\,s & 18.62\,s & $0.21\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Human evaluation}
+\label{sec:abx}
+
+\textbf{Pre-registered ABX study.} Design: 8 utterances (4 per model; agent, Hinglish, and narration domains), energy-ordered deletion at 30/50/60/75/90\% of bins, plus a random-deletion anchor at 30\% as a clearly audible control. ABX discrimination~\cite{clark1982abx} (X is an exact copy of A or B; chance 50\%), 36 rounds per listener after two practice rounds, all clips must be played before answering. N\,=\,30 listeners after screening (anchor accuracy $\geq$5/6, median response time $\geq$1.5\,s), about 180 trials per condition. Pre-registered transparency rule: detection accuracy not significantly above chance (one-sided exact binomial, $p\geq0.05$) \emph{and} Wilson 95\% interval~\cite{wilson1927probable} upper bound $\leq0.60$. The largest budget declared transparent is the paper's headline number. Table~\ref{tab:abx} reports the study.
+
+\begin{table}[h]
+\centering
+\caption{ABX study results (insert the output of \texttt{study/analyze.py}).}
+\label{tab:abx}
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Condition} & \textbf{$n$} & \textbf{accuracy} & \textbf{95\% CI} & \textbf{$p$ (>chance)} & \textbf{verdict} \\
+\midrule
+energy 30\% & --- & --- & --- & --- & --- \\
+energy 50\% & --- & --- & --- & --- & --- \\
+energy 60\% & --- & --- & --- & --- & --- \\
+energy 75\% & --- & --- & --- & --- & --- \\
+energy 90\% & --- & --- & --- & --- & --- \\
+random 30\% (anchor) & --- & --- & --- & --- & control \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Informal pilot (single listener; direction-finding only, not evidence).} Before the study, one author completed a blind version with hidden-reference and damaged-anchor hygiene checks; both passed (hidden references judged identical, random-deletion anchors judged clearly damaged). Energy-ordered deletion was judged identical to the reference up to 60--75\% of bins on both models (Piper up to 90\%), and the ordering energy $\geq$ masking was corroborated (Table~\ref{tab:pilot}). This motivated the study above and is superseded by it.
+
+\begin{table}[h]
+\centering
+\caption{Informal single-listener pilot (speakers, quiet). Judgements: same / slight / clear difference from reference.}
+\label{tab:pilot}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Condition} & \textbf{Piper (agent)} & \textbf{Kokoro (narration)} & \textbf{PESQ (Piper)} & \textbf{PESQ (Kokoro)} \\
+\midrule
+energy 60\% / masking 60\% & same / same & same / same & 4.48 / 3.06 & 3.08 / 1.80 \\
+energy 75\% / masking 75\% & same / same & same / slight & 3.70 / 2.53 & 2.01 / 1.40 \\
+energy 90\% / masking 90\% & same / slight & slight / clear & 1.88 / 1.64 & 1.24 / 1.14 \\
+random 30\% (anchor) & clear & clear & 1.58 & 1.74 \\
+hidden reference & same & same & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+
+Our results refine rather than defeat perceptual compute allocation. The \emph{premise}---that a large fraction of generative audio output is perceptually irrelevant and can be identified and removed transparently---is supported by the metric, by the pilot, and by the pre-registered study. The \emph{principle}---allocate by audibility, not uniformly---beats uniform and random allocation decisively. What our data remove is one piece of the original mechanism story: MP3's psychoacoustic model is not needed to drive the allocation; signal energy is a sufficient and nearly free criterion for time--frequency removal. This is good news for deployment (the ``eye-tracker'' costs nothing) and a caution for novelty claims (the sophisticated model is not the contribution).
+
+The binding constraint is realization. A fixed neural circuit does not become cheaper because its output is ignorable; the savings must be installed, and post-hoc precision reduction does not install them on CPU. The path forward is \emph{allocation-native decoding}: decoders that can decline to synthesize masked frequency regions or perceptually slack frames, which is an architecture and training question rather than an inference-time trick. Our measurements bound the prize: the decoder is 63--96\% of cost, and a large majority of its output is removable.
+
+\section{Related Work}
+
+\textbf{Psychoacoustics in neural audio.} Masking models allocate bits in perceptual codecs~\cite{iso11172, painter2000perceptual, bosi2003introduction}, including neural codecs guided by masking thresholds~\cite{muffin2025}. Zhen et al.\ weight training losses psychoacoustically to ship smaller static models~\cite{zhen2018psychoacoustically, zhen2020calibration}; that is training-time gradient weighting, whereas we allocate inference computation dynamically. \textbf{Adaptive computation.} Early exit and confidence-gated depth are established for classification and language modeling~\cite{teerapittayanon2016branchynet, schuster2022calm, raposo2024mixture, han2022dynamic} and, in speech, for understanding-side models~\cite{daisy2024}. On the synthesis side, recent work accelerates autoregressive TTS with speculative decoding~\cite{leviathan2023fast, chen2023accelerating, ssd2025}, learned dynamic chunk policies~\cite{dcar2025}, and scheduled early exit in spoken language models~\cite{spark2026}, with confidence, learned, or fixed criteria---never an audibility criterion. Static efficient synthesis (LPCNet~\cite{valin2019lpcnet}, FastSpeech~2~\cite{ren2021fastspeech2}) and static step-reduction for flow-matching TTS~\cite{zheng2025epss} spend uniform, content-independent compute. \textbf{Perceptual allocation in vision.} Foveated rendering~\cite{guenter2012foveated, patney2016foveated} and foveated neural reconstruction~\cite{kaplanyan2019deepfovea} allocate rendering budget by visual acuity, and foveated diffusion~\cite{foveateddiffusion2026} extends this to generative image and video synthesis; a VR line applies spatial auditory acuity to sound-propagation rendering~\cite{peng2025foveation}. We position CPU-TTS perceptual compute allocation as an independent audio-side instantiation of the same axis. Every neighbor shares at most two of our three coordinates---dynamic inference-time allocation, an audibility criterion, and a synthesis task---and none shares all three.
+
+\section{Limitations}
+
+Human evidence rests on one pre-registered ABX study (N\,=\,30) plus a single-listener pilot; a MUSHRA-style non-inferiority study with trained listeners is future work. PESQ is an imperfect proxy whose severities we show to be unreliable here. Two model families, one language with Hinglish through an English grapheme-to-phoneme model, and Model-1-class PAMs. No end-to-end speed-up was achieved: H2 is unrealized, and we report no capacity multiplier because we have no measured end-to-end reduction to base one on. The 96\,dB full-scale calibration is a conservative codec convention; below-threshold fractions are playback-level dependent.
+
+\section{Conclusion}
+
+Perceptual compute allocation is a sound organizing principle for CPU speech synthesis: the perceptually removable pool is large, audibility-ordered allocation dominates uniform allocation, and---unexpectedly---a trivial energy criterion suffices to find the pool, with the heavyweight psychoacoustic model offering no advantage for time--frequency removal. The open problem is installation: turning removable output into skipped computation demands allocation-native decoders, since post-hoc precision reduction fails on CPU. We release our tooling, corpus, calibration probe, listening-study instrument, and the full harness, including every negative-result experiment, so that the next step is reproducible.
+
+\section*{Acknowledgments}
+
+Experiments ran on an Apple M5 Pro and an ephemeral AWS \texttt{c7i.2xlarge}. We thank an external reviewer whose critique sharpened the claim-discipline rules in Appendix~\ref{app:discipline}.
+
+\emph{Use of AI tools.} The authors used a large language model assistant (Anthropic Claude) for drafting portions of the experiment-harness code and analysis scripts, for copy-editing author-directed text, and for locating candidate related work. All experimental design, measurements, analyses, and conclusions are the authors' own. Every reference was checked against its published record, all generated code was reviewed and executed by the authors, and no text, figure, or numerical result in this paper was produced by an AI system without author verification. The authors take full responsibility for the content of this work.
+
+\begin{thebibliography}{99}
+
+\bibitem{iso11172}
+ISO/IEC 11172-3:1993.
+Information technology---Coding of moving pictures and associated audio for digital storage media at up to about 1.5 Mbit/s---Part 3: Audio.
+International Organization for Standardization, 1993.
+
+\bibitem{painter2000perceptual}
+Painter, T., \& Spanias, A. (2000).
+Perceptual coding of digital audio.
+\textit{Proceedings of the IEEE}, 88(4), 451--513.
+DOI: 10.1109/5.842996.
+
+\bibitem{zwicker2007psychoacoustics}
+Fastl, H., \& Zwicker, E. (2007).
+\textit{Psychoacoustics: Facts and Models} (3rd ed.), Springer Series in Information Sciences, vol.\ 22.
+Springer, Berlin/Heidelberg.
+DOI: 10.1007/978-3-540-68888-4.
+
+\bibitem{bosi2003introduction}
+Bosi, M., \& Goldberg, R. E. (2003).
+\textit{Introduction to Digital Audio Coding and Standards}.
+Kluwer Academic Publishers, Boston.
+DOI: 10.1007/978-1-4615-0327-9.
+
+\bibitem{terhardt1979pitch}
+Terhardt, E. (1979).
+Calculating virtual pitch.
+\textit{Hearing Research}, 1(2), 155--182.
+DOI: 10.1016/0378-5955(79)90025-X.
+
+\bibitem{schuller2020filter}
+Schuller, G. (2020).
+\textit{Filter Banks and Audio Coding: Compressing Audio Signals Using Python}.
+Springer, Cham.
+DOI: 10.1007/978-3-030-51249-1.
+
+\bibitem{zhen2018psychoacoustically}
+Zhen, K., Sivaraman, A., Sung, J., \& Kim, M. (2018).
+On psychoacoustically weighted cost functions towards resource-efficient deep neural networks for speech denoising.
+\textit{arXiv preprint arXiv:1801.09774}.
+
+\bibitem{zhen2020calibration}
+Zhen, K., Lee, M. S., Sung, J., Beack, S., \& Kim, M. (2020).
+Psychoacoustic calibration of loss functions for efficient end-to-end neural audio coding.
+\textit{IEEE Signal Processing Letters}, 27, 2159--2163.
+DOI: 10.1109/LSP.2020.3039765. arXiv:2101.00054.
+
+\bibitem{muffin2025}
+Ng, D., Zhou, K., Chao, Y.-W., Xiong, Z., Ma, B., \& Chng, E. S. (2025).
+Multi-band frequency reconstruction for neural psychoacoustic coding.
+\textit{arXiv preprint arXiv:2505.07235}.
+
+\bibitem{itu_p862}
+ITU-T Recommendation P.862 (2001), Perceptual evaluation of speech quality (PESQ): An objective method for end-to-end speech quality assessment of narrow-band telephone networks and speech codecs; and ITU-T Recommendation P.862.2 (2005, rev.\ 2007), Wideband extension to Recommendation P.862.
+International Telecommunication Union. (Withdrawn January 2024, superseded by P.863.)
+
+\bibitem{rix2001pesq}
+Rix, A. W., Beerends, J. G., Hollier, M. P., \& Hekstra, A. P. (2001).
+Perceptual evaluation of speech quality (PESQ)---a new method for speech quality assessment of telephone networks and codecs.
+In \textit{Proceedings of ICASSP}, vol.\ 2, 749--752.
+DOI: 10.1109/ICASSP.2001.941023.
+
+\bibitem{taal2011stoi}
+Taal, C. H., Hendriks, R. C., Heusdens, R., \& Jensen, J. (2011).
+An algorithm for intelligibility prediction of time--frequency weighted noisy speech.
+\textit{IEEE Transactions on Audio, Speech, and Language Processing}, 19(7), 2125--2136.
+DOI: 10.1109/TASL.2011.2114881.
+
+\bibitem{clark1982abx}
+Clark, D. (1982).
+High-resolution subjective testing using a double-blind comparator.
+\textit{Journal of the Audio Engineering Society}, 30(5), 330--338.
+AES E-Library 3839.
+
+\bibitem{wilson1927probable}
+Wilson, E. B. (1927).
+Probable inference, the law of succession, and statistical inference.
+\textit{Journal of the American Statistical Association}, 22(158), 209--212.
+DOI: 10.1080/01621459.1927.10502953.
+
+\bibitem{amdahl1967validity}
+Amdahl, G. M. (1967).
+Validity of the single processor approach to achieving large scale computing capabilities.
+In \textit{Proceedings of the AFIPS Spring Joint Computer Conference}, vol.\ 30, 483--485.
+DOI: 10.1145/1465482.1465560.
+
+\bibitem{kim2021vits}
+Kim, J., Kong, J., \& Son, J. (2021).
+Conditional variational autoencoder with adversarial learning for end-to-end text-to-speech.
+In \textit{Proceedings of ICML}.
+arXiv:2106.06103.
+
+\bibitem{kong2020hifigan}
+Kong, J., Kim, J., \& Bae, J. (2020).
+HiFi-GAN: Generative adversarial networks for efficient and high fidelity speech synthesis.
+In \textit{Advances in Neural Information Processing Systems (NeurIPS)}.
+arXiv:2010.05646.
+
+\bibitem{li2023styletts2}
+Li, Y. A., Han, C., Raghavan, V., Mischler, G., \& Mesgarani, N. (2023).
+StyleTTS 2: Towards human-level text-to-speech through style diffusion and adversarial training with large speech language models.
+In \textit{Advances in Neural Information Processing Systems (NeurIPS)}.
+arXiv:2306.07691.
+
+\bibitem{kaneko2022istftnet}
+Kaneko, T., Tanaka, K., Kameoka, H., \& Seki, S. (2022).
+iSTFTNet: Fast and lightweight mel-spectrogram vocoder incorporating inverse short-time Fourier transform.
+In \textit{Proceedings of ICASSP}.
+arXiv:2203.02395.
+
+\bibitem{valin2019lpcnet}
+Valin, J.-M., \& Skoglund, J. (2019).
+LPCNet: Improving neural speech synthesis through linear prediction.
+In \textit{Proceedings of ICASSP}.
+arXiv:1810.11846.
+
+\bibitem{ren2021fastspeech2}
+Ren, Y., Hu, C., Tan, X., Qin, T., Zhao, S., Zhao, Z., \& Liu, T.-Y. (2021).
+FastSpeech 2: Fast and high-quality end-to-end text to speech.
+In \textit{International Conference on Learning Representations (ICLR)}.
+arXiv:2006.04558.
+
+\bibitem{piper}
+Hansen, M. (2023).
+Piper: A fast, local neural text to speech system.
+\url{https://github.com/rhasspy/piper} (MIT; repository archived October 2025, development continued at \url{https://github.com/OHF-Voice/piper1-gpl}). Accessed September 2026.
+
+\bibitem{kokoro}
+hexgrad (2025).
+Kokoro-82M (v1.0), Apache-2.0.
+Hugging Face model repository, \url{https://huggingface.co/hexgrad/Kokoro-82M}; ONNX runtime package kokoro-onnx (MIT), \url{https://github.com/thewh1teagle/kokoro-onnx}. Accessed September 2026.
+
+\bibitem{onnxruntime}
+ONNX Runtime developers (2021).
+ONNX Runtime, versions 1.28.0 and 1.29.0.
+\url{https://onnxruntime.ai}.
+
+\bibitem{teerapittayanon2016branchynet}
+Teerapittayanon, S., McDanel, B., \& Kung, H. T. (2016).
+BranchyNet: Fast inference via early exiting from deep neural networks.
+In \textit{Proceedings of ICPR}.
+arXiv:1709.01686.
+
+\bibitem{schuster2022calm}
+Schuster, T., Fisch, A., Gupta, J., Dehghani, M., Bahri, D., Tran, V. Q., Tay, Y., \& Metzler, D. (2022).
+Confident adaptive language modeling.
+In \textit{Advances in Neural Information Processing Systems (NeurIPS)}.
+arXiv:2207.07061.
+
+\bibitem{han2022dynamic}
+Han, Y., Huang, G., Song, S., Yang, L., Wang, H., \& Wang, Y. (2022).
+Dynamic neural networks: A survey.
+\textit{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 44(11), 7436--7456.
+DOI: 10.1109/TPAMI.2021.3117837.
+
+\bibitem{zheng2025epss}
+Zheng, Q., Chen, Y., Niu, Z., Ma, Z., Wang, X., Yu, K., \& Chen, X. (2025).
+Accelerating flow-matching-based text-to-speech via empirically pruned step sampling.
+\textit{arXiv preprint arXiv:2505.19931}.
+
+\bibitem{raposo2024mixture}
+Raposo, D., Ritter, S., Richards, B., Lillicrap, T., Humphreys, P. C., \& Santoro, A. (2024).
+Mixture-of-Depths: Dynamically allocating compute in transformer-based language models.
+\textit{arXiv preprint arXiv:2404.02258}.
+
+\bibitem{daisy2024}
+Lin, T.-Q., Lee, H.-y., \& Tang, H. (2024).
+DAISY: Data adaptive self-supervised early exit for speech representation models.
+In \textit{Proceedings of Interspeech}.
+arXiv:2406.05464.
+
+\bibitem{leviathan2023fast}
+Leviathan, Y., Kalman, M., \& Matias, Y. (2023).
+Fast inference from transformers via speculative decoding.
+In \textit{Proceedings of ICML}.
+arXiv:2211.17192.
+
+\bibitem{chen2023accelerating}
+Chen, C., Borgeaud, S., Irving, G., Lespiau, J.-B., Sifre, L., \& Jumper, J. (2023).
+Accelerating large language model decoding with speculative sampling.
+\textit{arXiv preprint arXiv:2302.01318}.
+
+\bibitem{ssd2025}
+Lin, Z., Zhang, Y., Yuan, Y., Yan, Y., Liu, J., Wu, Z., Hu, P., \& Yu, Q. (2025).
+Accelerating autoregressive speech synthesis inference with speech speculative decoding.
+In \textit{Proceedings of Interspeech}.
+arXiv:2505.15380.
+
+\bibitem{dcar2025}
+Li, B., Li, Z., Wang, H., Zhang, H., Guo, Y., Wang, H., Chen, X., \& Yu, K. (2025).
+Robust and efficient autoregressive speech synthesis with dynamic chunk-wise prediction policy.
+\textit{arXiv preprint arXiv:2506.22023}.
+
+\bibitem{spark2026}
+Huang, H.-Y., Chiang, C.-H., \& Lee, H.-y. (2026).
+SPAR-K: Scheduled periodic alternating early exit for spoken language models.
+\textit{arXiv preprint arXiv:2603.09215}.
+
+\bibitem{guenter2012foveated}
+Guenter, B., Finch, M., Drucker, S., Tan, D., \& Snyder, J. (2012).
+Foveated 3D graphics.
+\textit{ACM Transactions on Graphics}, 31(6), Article 164.
+DOI: 10.1145/2366145.2366183.
+
+\bibitem{patney2016foveated}
+Patney, A., Salvi, M., Kim, J., Kaplanyan, A., Wyman, C., Benty, N., Luebke, D., \& Lefohn, A. (2016).
+Towards foveated rendering for gaze-tracked virtual reality.
+\textit{ACM Transactions on Graphics}, 35(6), Article 179.
+DOI: 10.1145/2980179.2980246.
+
+\bibitem{kaplanyan2019deepfovea}
+Kaplanyan, A. S., Sochenov, A., Leimk\"uhler, T., Okunev, M., Goodall, T., \& Rufo, G. (2019).
+DeepFovea: Neural reconstruction for foveated rendering and video compression using learned statistics of natural videos.
+\textit{ACM Transactions on Graphics}, 38(6).
+DOI: 10.1145/3355089.3356557.
+
+\bibitem{foveateddiffusion2026}
+Chao, C., Yariv, L., Xiao, L., \& Wetzstein, G. (2026).
+Foveated diffusion: Efficient spatially adaptive image and video generation.
+\textit{arXiv preprint arXiv:2603.23491}.
+
+\bibitem{peng2025foveation}
+Peng, Y., Chen, Z., Roman, N., Bello, J. P., Sun, Q., \& Chakravarthula, P. (2025).
+Perceptually-guided acoustic ``foveation''.
+In \textit{Proceedings of the IEEE Conference on Virtual Reality and 3D User Interfaces (VR)}, 450--460.
+DOI: 10.1109/VR59515.2025.00069.
+
+\end{thebibliography}
+
+\appendix
+
+\section{Claim Discipline}
+\label{app:discipline}
+
+The following rules were fixed before experimentation and were not relaxed. (1) Capacity multipliers are reported only from measured end-to-end wall-clock reduction $r$ as $1/(1-r)$; stage-level and end-to-end reductions are always distinguished; none is reported here because no end-to-end reduction was measured. (2) Illustrative numbers from planning never appear as results. (3) All overheads (allocation decisions, mechanism switching) live inside every reported efficiency number. (4) No fabricated or interpolated measurements; no synthetic listening-test data. (5) Fixed seeds, pinned tool versions, every claim traceable to a logged run. (6) Inference claims are CPU-only on named hardware; any training-side or quantization compute is disclosed as such.
+
+\section{Reproducibility}
+
+Tool versions: Python 3.12.13; ONNX Runtime 1.28.0 (Apple) and 1.29.0 (Intel); piper-tts 1.6.1; kokoro-onnx 0.5.0; pesq 0.0.4; pystoi 0.4.1; onnx 1.22.0. Models: \texttt{en\_US-lessac-medium.onnx} (rhasspy/piper-voices), \texttt{kokoro-v1.0.onnx} and \texttt{voices-v1.0.bin} (thewh1teagle/kokoro-onnx release v1.0). All random seeds are 1234. Timing protocol: one warm-up, median (RTF) or best (decoder microbenchmarks) of three runs, single process, no other load. The corpus texts, all scripts, result JSON files, run logs, the listening-study instrument, and the study protocol are at \url{\repourl}.
+
+\section{ABX Study Protocol Summary}
+
+Stimuli are level-normalized 16-bit PCM. Each listener completes 2 practice rounds with feedback, then 30 test rounds (6 per budget, utterances sampled without repeating an utterance--condition pair) interleaved with 6 anchor rounds, all shuffled; assignment of reference and processed clip to A/B and to X is randomized per round. Screening excludes listeners with anchor accuracy below 5/6 or median test-round response time below 1.5\,s. Analysis pools trials per condition, reports accuracy with Wilson 95\% intervals and one-sided exact binomial tests against 0.5, and applies the pre-registered verdict rule stated in Section~\ref{sec:abx}. Consent, anonymity, and the right to withdraw are stated on the study's first screen.
+
+\end{document}

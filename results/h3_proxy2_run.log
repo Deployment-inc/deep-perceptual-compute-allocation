@@ -1,0 +1,77 @@
+...0/90
+...10/90
+...20/90
+...30/90
+...40/90
+...50/90
+...60/90
+...70/90
+...80/90
+
+op      model       B     policy   PESQ   STOI
+delete  kokoro    0.1     energy  4.574  1.000
+delete  kokoro    0.1 perceptual  4.229  1.000
+delete  kokoro    0.1     random  2.279  0.953
+delete  kokoro    0.3     energy  4.123  1.000
+delete  kokoro    0.3 perceptual  3.146  0.995
+delete  kokoro    0.3     random  1.271  0.852
+delete  kokoro    0.5     energy  2.980  0.998
+delete  kokoro    0.5 perceptual  1.577  0.955
+delete  kokoro    0.5     random  1.078  0.730
+delete  kokoro    0.7     energy  1.858  0.986
+delete  kokoro    0.7 perceptual  1.085  0.821
+delete  kokoro    0.7     random  1.035  0.566
+delete  piper     0.1     energy  4.642  1.000
+delete  piper     0.1 perceptual  4.541  1.000
+delete  piper     0.1     random  2.284  0.949
+delete  piper     0.3     energy  4.588  1.000
+delete  piper     0.3 perceptual  4.071  0.999
+delete  piper     0.3     random  1.281  0.843
+delete  piper     0.5     energy  4.401  1.000
+delete  piper     0.5 perceptual  2.318  0.976
+delete  piper     0.5     random  1.084  0.714
+delete  piper     0.7     energy  3.385  0.998
+delete  piper     0.7 perceptual  1.228  0.879
+delete  piper     0.7     random  1.034  0.535
+noise   kokoro    0.1     energy  4.214  0.999
+noise   kokoro    0.1 perceptual  4.007  0.999
+noise   kokoro    0.1     random  2.626  0.996
+noise   kokoro    0.3     energy  3.459  0.997
+noise   kokoro    0.3 perceptual  2.841  0.995
+noise   kokoro    0.3     random  2.138  0.990
+noise   kokoro    0.5     energy  2.562  0.992
+noise   kokoro    0.5 perceptual  2.078  0.991
+noise   kokoro    0.5     random  1.947  0.987
+noise   kokoro    0.7     energy  1.808  0.986
+noise   kokoro    0.7 perceptual  1.656  0.987
+noise   kokoro    0.7     random  1.820  0.985
+noise   piper     0.1     energy  4.218  0.999
+noise   piper     0.1 perceptual  3.971  0.999
+noise   piper     0.1     random  2.646  0.996
+noise   piper     0.3     energy  2.871  0.992
+noise   piper     0.3 perceptual  2.594  0.992
+noise   piper     0.3     random  2.108  0.991
+noise   piper     0.5     energy  1.874  0.986
+noise   piper     0.5 perceptual  1.787  0.986
+noise   piper     0.5     random  1.914  0.988
+noise   piper     0.7     energy  1.479  0.985
+noise   piper     0.7 perceptual  1.543  0.985
+noise   piper     0.7     random  1.812  0.986
+
+Paired Wilcoxon PESQ (perceptual - energy):
+  delete piper   B=0.1: -0.101 p=5.7e-14 n=45
+  delete piper   B=0.3: -0.518 p=5.7e-14 n=45
+  delete piper   B=0.5: -2.083 p=5.7e-14 n=45
+  delete piper   B=0.7: -2.157 p=5.7e-14 n=45
+  delete kokoro  B=0.1: -0.345 p=5.7e-14 n=45
+  delete kokoro  B=0.3: -0.977 p=5.7e-14 n=45
+  delete kokoro  B=0.5: -1.402 p=5.7e-14 n=45
+  delete kokoro  B=0.7: -0.773 p=5.7e-14 n=45
+  noise  piper   B=0.1: -0.247 p=1.1e-13 n=45
+  noise  piper   B=0.3: -0.277 p=9.6e-10 n=45
+  noise  piper   B=0.5: -0.087 p=4.0e-06 n=45
+  noise  piper   B=0.7: +0.064 p=2.8e-03 n=45
+  noise  kokoro  B=0.1: -0.207 p=8.0e-13 n=45
+  noise  kokoro  B=0.3: -0.618 p=5.7e-14 n=45
+  noise  kokoro  B=0.5: -0.484 p=5.7e-14 n=45
+  noise  kokoro  B=0.7: -0.153 p=8.6e-07 n=45
