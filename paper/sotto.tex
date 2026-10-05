@@ -98,7 +98,7 @@ We think the two failed expectations are as useful as the one that held. The sec
     \item \textbf{A pre-registered criterion test with a negative result:} signal energy matches or beats a psychoacoustic masking model for deciding \emph{where} to remove content. The sophisticated listener model is not needed for this decision (Section~\ref{sec:h3}).
     \item \textbf{A characterization of the theoretical-vs-realized savings gap}, including the reproducible finding that dynamic INT8 quantization of the dominant decoder \emph{increases} wall-clock cost on both Intel and Apple CPUs (Section~\ref{sec:rq4}).
     \item \textbf{Methodological artifacts:} a $\Delta$-probe that calibrates any inference-time PAM against a reference metric and an external codec anchor; evidence that PESQ's severities, though not its orderings, collapse on masked-removal distortions; and two design traps (criterion/operator matching, self-masking) that silently bias perceptual-gating experiments (Sections~\ref{sec:probe}, \ref{sec:traps}).
-    \item \textbf{Open release} of tooling, corpus, study instrument, and the full harness, including the negative-result experiments (\url{\repourl}).
+    \item \textbf{Open release} of tooling, corpus, study instrument, and the full harness, including the negative-result experiments:\\ \url{\repourl}.
 \end{enumerate}
 
 We present an idea with preliminary evidence. We claim the principle and its CPU-TTS instantiation as a promising direction. We do \emph{not} claim that a masking model beats energy, and we do not claim a realized end-to-end speedup; neither is supported by our data.
