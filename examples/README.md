@@ -2,7 +2,7 @@
 
 Listen for yourself. Each row is one synthesized utterance. `original` is the untouched TTS output; the `energy N%` clips have the quietest N% of time-frequency bins deleted (energy-ordered removal); `random 30%` deletes 30% of bins at random and is the clearly damaged control.
 
-Use headphones. GitHub plays `.wav` files in the browser when you click them. The same clips power the blind ABX test at https://deployment-inc.github.io/perceptual-compute-allocation/ .
+Use headphones. GitHub plays `.wav` files in the browser when you click them. The same clips power the blind ABX test at https://deployment-inc.github.io/deep-perceptual-compute-allocation/ .
 
 | Model | Text | original | energy 30% | energy 50% | energy 60% | energy 75% | energy 90% | random 30% (control) |
 |---|---|---|---|---|---|---|---|---|

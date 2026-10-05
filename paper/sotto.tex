@@ -33,7 +33,7 @@
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\Prob}{\mathbb{P}}
 
-\newcommand{\repourl}{https://github.com/Deployment-inc/perceptual-compute-allocation}
+\newcommand{\repourl}{https://github.com/Deployment-inc/deep-perceptual-compute-allocation}
 
 % Title and author
 \title{\textbf{Perceptual Compute Allocation for Speech Synthesis: \\ Spend Compute Only Where Listeners Can Hear the Difference}}
@@ -367,7 +367,7 @@ random 30\% (anchor) & 6 & 1.00 & [0.61, 1.00] \\
 \end{tabular}
 \end{table}
 
-Across all 30 energy-condition trials accuracy was 17/30 (0.57); the pattern is not monotone in budget (0.83 at 30\%, 0.17 at 50\%), as expected from sampling noise at $n=6$. Every interval includes chance and also values well above the 0.60 bound we would require to call a budget transparent, so \emph{this pilot cannot establish transparency at any budget}. A larger, pre-registered study (Appendix~\ref{app:abx}; instrument and analysis released) is the natural next step. Readers can judge for themselves: paired audio examples (original, energy-ordered deletion at each budget, and the random-deletion control) are at \url{\repourl/tree/main/examples}, and the ABX instrument runs in a browser at \url{https://deployment-inc.github.io/perceptual-compute-allocation/}.
+Across all 30 energy-condition trials accuracy was 17/30 (0.57); the pattern is not monotone in budget (0.83 at 30\%, 0.17 at 50\%), as expected from sampling noise at $n=6$. Every interval includes chance and also values well above the 0.60 bound we would require to call a budget transparent, so \emph{this pilot cannot establish transparency at any budget}. A larger, pre-registered study (Appendix~\ref{app:abx}; instrument and analysis released) is the natural next step. Readers can judge for themselves: paired audio examples (original, energy-ordered deletion at each budget, and the random-deletion control) are at \url{\repourl/tree/main/examples}, and the ABX instrument runs in a browser at \url{https://deployment-inc.github.io/deep-perceptual-compute-allocation/}.
 
 \textbf{Earlier informal pilot (same listener; direction-finding only).} In a separate earlier session the author completed a blind comparison with hidden-reference and damaged-anchor hygiene checks; both passed. Energy-ordered deletion was judged identical to the reference up to 60--75\% of bins on both models (Piper up to 90\%), and the ordering energy $\geq$ masking was corroborated (Table~\ref{tab:pilot}).
 

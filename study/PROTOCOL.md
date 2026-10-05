@@ -34,7 +34,7 @@ A condition is declared **transparent** if pooled detection accuracy is not sign
 
 ## 6. Hosting
 
-**Live instance (GitHub Pages, `gh-pages` branch of this repo):** https://deployment-inc.github.io/perceptual-compute-allocation/
+**Live instance (GitHub Pages, `gh-pages` branch of this repo):** https://deployment-inc.github.io/deep-perceptual-compute-allocation/
 Share that link directly (append `?pid=NAME` to tag a known listener, or `?PROLIFIC_PID={{%PROLIFIC_PID%}}` on Prolific). To republish after editing `study/`, push the folder's contents to the `gh-pages` branch again.
 
 The study is a static site: `study/index.html` + `study/audio/*.wav` (10 MB), so it can also be hosted anywhere static:
