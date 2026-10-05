@@ -46,3 +46,16 @@ Every reference in `sotto.tex` was checked against authoritative records (arXiv 
 | peng2025foveation | Peng et al., IEEE VR 2025 | 10.1109/VR59515.2025.00069 | verified |
 
 Not cited in the final manuscript but verified and available: ITU-R BS.1534-3 (MUSHRA, 2015).
+
+## Re-audit 2026-10-05 (independent, from scratch)
+
+All 40 entries re-checked against the arXiv API (20 IDs), Crossref (15 DOIs), ISO/ITU pages, GitHub and Hugging Face. 40/40 exist. Corrections applied to `sotto.tex`:
+
+- `foveateddiffusion2026`: author initials corrected to Chao, B. and Xiao, H. (arXiv:2603.23491 lists Brian Chao, Howard Xiao).
+- `peng2025foveation`: author initials corrected to Peng, X., Chen, K., Roman, I. (Crossref 10.1109/VR59515.2025.00069).
+- `itu_p862`: P.862.2 title completed.
+- `painter2000perceptual`: pages 451-515 to match the DOI's registered metadata.
+- `clark1982abx`: was uncited after the reframe; now cited at the ABX pilot.
+- Citing sentences tightened: MUFFIN (multi-band allocation, not per-signal masking thresholds); speculative decoding (Leviathan, Chen are text-LLM papers, SSD is the TTS one); Mixture-of-Depths (learned routing); EPSS (fixed, not uniform); DeepFovea (neural reconstruction).
+
+Not checked against source text: the books (Fastl & Zwicker, Bosi & Goldberg, Schuller), Terhardt 1979, the ISO standard body. Venues for several arXiv-listed papers rest on the authors' arXiv comment field. ACM article numbers (Guenter 164, Patney 179) and the Amdahl volume/end page were seen only in search snippets.

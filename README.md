@@ -1,8 +1,10 @@
 # Sotto — Perceptual Compute Allocation for CPU Speech Synthesis
 
 Code, corpus, measurements, listening-study instrument, and paper source for
-*"Most of What Neural TTS Computes, Nobody Can Hear: Perceptual Compute Allocation for CPU Speech Synthesis"*
-(Aayush Gupta, Jayesh Gupta, Himanshu Rathore — Deployment Inc., 2026).
+*"Perceptual Compute Allocation for Speech Synthesis: Spend Compute Only Where Listeners Can Hear the Difference"*
+(Aayush Gupta, Deployment Inc., 2026).
+
+**Listen first:** paired audio examples are in [`examples/`](examples/), and the blind ABX test runs in the browser at https://deployment-inc.github.io/perceptual-compute-allocation/
 
 Everything reported in the paper is reproducible from this repository; every experiment, including the negative results, is here.
 
